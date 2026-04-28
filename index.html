@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Plant Doctor</title>
+<style>
+  :root { --primary:#16a34a; --bg:#f9fafb; --text:#111827; --muted:#6b7280; --border:#e5e7eb; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background:var(--bg); color:var(--text); margin:0; padding:0; line-height:1.65; }
+  .container { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+  header { background: linear-gradient(135deg, #16a34a, #22c55e); color:#fff; padding: 28px 20px; text-align:center; border-radius: 0 0 16px 16px; }
+  header h1 { margin:0 0 6px; font-size: 26px; }
+  header p { margin:0; opacity:.95; font-size: 14px; }
+  .lang-switch { display:flex; justify-content:center; gap:8px; margin: 20px 0 30px; flex-wrap: wrap; }
+  .lang-switch button { background:#fff; border:1px solid var(--border); color:var(--text); padding:8px 16px; border-radius: 999px; cursor:pointer; font-size: 14px; font-weight: 500; transition: all .15s; }
+  .lang-switch button.active { background: var(--primary); color:#fff; border-color: var(--primary); }
+  .lang-switch button:hover:not(.active) { background:#f3f4f6; }
+  section.lang { display:none; }
+  section.lang.active { display:block; }
+  h2 { color: var(--primary); margin-top: 32px; font-size: 20px; border-bottom: 2px solid var(--border); padding-bottom: 6px; }
+  h3 { font-size: 16px; margin-top: 22px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .meta { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
+  .contact-box { background:#fff; border:1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin-top: 24px; }
+  .contact-box a { color: var(--primary); text-decoration:none; }
+  .contact-box a:hover { text-decoration: underline; }
+  footer { text-align:center; color: var(--muted); font-size: 13px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); }
+  code { background:#f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌿 Plant Doctor — Privacy Policy</h1>
+  <p>Политика конфиденциальности · Сиёсати махфият · Privacy Policy</p>
+</header>
+
+<div class="container">
+
+  <div class="lang-switch">
+    <button class="active" data-lang="ru">🇷🇺 Русский</button>
+    <button data-lang="tj">🇹🇯 Тоҷикӣ</button>
+    <button data-lang="en">🇬🇧 English</button>
+  </div>
+
+  <!-- ============ РУССКИЙ ============ -->
+  <section class="lang active" id="ru">
+    <p class="meta">Последнее обновление: 28 апреля 2026 г.</p>
+
+    <p>Настоящая Политика конфиденциальности описывает, как мобильное приложение <strong>Plant Doctor</strong> («Приложение», «мы», «нас») собирает, использует и защищает информацию пользователей. Используя Приложение, вы соглашаетесь с условиями этой Политики.</p>
+
+    <h2>1. Разработчик</h2>
+    <p>Приложение разработано <strong>Сатторовым Носирҷоном</strong> (физическое лицо, Республика Таджикистан).<br>
+    Контакт: <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a></p>
+
+    <h2>2. Какие данные мы собираем</h2>
+
+    <h3>2.1. Данные, которые отправляются на наш сервер</h3>
+    <ul>
+      <li><strong>Фотографии растений</strong> — когда вы фотографируете лист или растение для диагностики, фото в формате Base64 передаётся на наш сервер для AI-анализа.</li>
+      <li><strong>Голосовые сообщения</strong> — когда вы используете функцию «Голосовой агроном», аудио передаётся на сервер для распознавания и AI-ответа.</li>
+      <li><strong>Геолокация (приблизительная)</strong> — для функции погодных подсказок мы запрашиваем координаты вашего устройства. Координаты передаются только сервису погоды open-meteo.com и не сохраняются на нашем сервере.</li>
+    </ul>
+
+    <h3>2.2. Данные, которые хранятся ТОЛЬКО на вашем устройстве</h3>
+    <ul>
+      <li>История диагнозов (до 50 записей)</li>
+      <li>Дневник растений (фото, имена, заметки, даты полива и подкормки)</li>
+      <li>Настройки приложения (язык, интервалы напоминаний)</li>
+      <li>Идентификаторы локальных уведомлений</li>
+    </ul>
+    <p>Эти данные хранятся в локальном хранилище устройства (<code>AsyncStorage</code>) и <strong>никогда не передаются на наши серверы или третьим лицам</strong>. При удалении приложения они также удаляются.</p>
+
+    <h3>2.3. Данные, которые мы НЕ собираем</h3>
+    <ul>
+      <li>Имя, email, телефон, дата рождения</li>
+      <li>Точное местоположение и история перемещений</li>
+      <li>Контакты, СМС, звонки</li>
+      <li>Идентификаторы рекламы (Advertising ID)</li>
+      <li>Личные данные платежей (приложение бесплатное)</li>
+    </ul>
+
+    <h2>3. Зачем мы используем данные</h2>
+    <ul>
+      <li><strong>Фото и аудио</strong> — для AI-диагностики болезней растений и ответов на вопросы по уходу.</li>
+      <li><strong>Геолокация</strong> — только для отображения текущей погоды и рекомендаций по поливу.</li>
+      <li>Мы <strong>не используем</strong> ваши данные для рекламы, профилирования или продажи третьим сторонам.</li>
+    </ul>
+
+    <h2>4. Сторонние сервисы</h2>
+    <p>Приложение использует следующие сторонние сервисы:</p>
+    <ul>
+      <li><strong>Google Gemini AI</strong> (Google LLC) — для анализа фото и аудио.<br>
+      Политика: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+      <li><strong>Vercel</strong> (Vercel Inc.) — хостинг нашего серверного API.<br>
+      Политика: <a href="https://vercel.com/legal/privacy-policy" target="_blank">https://vercel.com/legal/privacy-policy</a></li>
+      <li><strong>Open-Meteo</strong> (open-meteo.com) — данные о погоде, не требует авторизации.<br>
+      Политика: <a href="https://open-meteo.com/en/terms" target="_blank">https://open-meteo.com/en/terms</a></li>
+      <li><strong>Expo / EAS</strong> (Expo Inc.) — обновления приложения по воздуху (OTA).<br>
+      Политика: <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
+    </ul>
+
+    <h2>5. Хранение и удаление данных</h2>
+    <ul>
+      <li>Фото и аудио передаются через наш сервер транзитом — <strong>мы их не сохраняем</strong>. Google Gemini может временно использовать их для обработки в соответствии со своей политикой.</li>
+      <li>Локальные данные хранятся на вашем устройстве до удаления приложения или ручной очистки в самом приложении (история, дневник).</li>
+    </ul>
+
+    <h2>6. Разрешения приложения</h2>
+    <ul>
+      <li><strong>Камера</strong> — для съёмки растений.</li>
+      <li><strong>Галерея / медиа</strong> — для выбора фото из галереи.</li>
+      <li><strong>Микрофон</strong> — для голосовых вопросов.</li>
+      <li><strong>Геолокация (приблизительная)</strong> — для погодных подсказок (необязательно, можно отказать).</li>
+      <li><strong>Уведомления</strong> — для напоминаний о поливе и подкормке.</li>
+      <li><strong>Интернет</strong> — для связи с AI-сервером.</li>
+    </ul>
+
+    <h2>7. Дети</h2>
+    <p>Приложение не предназначено специально для детей до 13 лет и не собирает осознанно их персональных данных.</p>
+
+    <h2>8. Изменения в Политике</h2>
+    <p>Мы можем обновлять эту Политику. Актуальная версия всегда публикуется на этой странице с указанием даты последнего обновления.</p>
+
+    <h2>9. Ваши права</h2>
+    <p>Вы можете в любой момент:</p>
+    <ul>
+      <li>Очистить историю диагнозов в настройках приложения.</li>
+      <li>Удалить любое растение из дневника.</li>
+      <li>Отключить геолокацию и уведомления в настройках устройства.</li>
+      <li>Удалить приложение — все локальные данные будут стёрты.</li>
+    </ul>
+
+    <div class="contact-box">
+      <strong>Контакт по вопросам конфиденциальности:</strong><br>
+      📧 <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a><br>
+      Сатторов Носирҷон, Республика Таджикистан
+    </div>
+  </section>
+
+  <!-- ============ ТОҶИКӢ ============ -->
+  <section class="lang" id="tj">
+    <p class="meta">Санаи нави охирин: 28 апрели соли 2026</p>
+
+    <p>Ҳамин Сиёсати махфият тарзи ҷамъоварӣ, истифода ва ҳифзи маълумоти истифодабарандагонро аз ҷониби барномаи мобилии <strong>Plant Doctor</strong> («Барнома», «мо») баён мекунад. Бо истифода аз Барнома шумо бо шартҳои ин Сиёсат розигӣ дода мешавед.</p>
+
+    <h2>1. Таҳиягар</h2>
+    <p>Барнома аз ҷониби <strong>Сатторов Носирҷон</strong> (шахси воқеӣ, Ҷумҳурии Тоҷикистон) таҳия шудааст.<br>
+    Тамос: <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a></p>
+
+    <h2>2. Кадом маълумотро ҷамъ мекунем</h2>
+
+    <h3>2.1. Маълумоте, ки ба сервери мо мефиристем</h3>
+    <ul>
+      <li><strong>Аксҳои растаниҳо</strong> — вақте ки шумо барги ё растаниро барои ташхис аксбардорӣ мекунед, акс дар формати Base64 ба сервери мо барои таҳлили AI фиристода мешавад.</li>
+      <li><strong>Паёмҳои овозӣ</strong> — вақте ки шумо аз функсияи «Агрономи овозӣ» истифода мебаред, овоз ба сервер барои шинохт ва ҷавоби AI фиристода мешавад.</li>
+      <li><strong>Ҷойгиршавии тахминӣ</strong> — барои функсияи маслиҳатҳои ҳавошиносӣ мо координатаҳои дастгоҳи шуморо дархост мекунем. Координатаҳо танҳо ба хидмати ҳавошиносии open-meteo.com фиристода мешаванд ва дар сервери мо нигоҳ дошта намешаванд.</li>
+    </ul>
+
+    <h3>2.2. Маълумоте, ки ТАНҲО дар дастгоҳи шумо нигоҳ дошта мешавад</h3>
+    <ul>
+      <li>Таърихи ташхисҳо (то 50 сабт)</li>
+      <li>Рӯзномаи растаниҳо (акс, ном, эзоҳҳо, санаҳои обдиҳӣ ва ғизо додан)</li>
+      <li>Танзимоти барнома (забон, фосилаҳои огоҳнома)</li>
+      <li>Идентификаторҳои огоҳномаҳои маҳаллӣ</li>
+    </ul>
+    <p>Ин маълумот дар анбори маҳаллии дастгоҳ (<code>AsyncStorage</code>) нигоҳ дошта мешавад ва <strong>ҳеҷ гоҳ ба серверҳои мо ё шахсони сеюм фиристода намешавад</strong>. Ҳангоми нест кардани барнома онҳо низ нест мегарданд.</p>
+
+    <h3>2.3. Маълумоте, ки мо ҷамъ НАМЕКУНЕМ</h3>
+    <ul>
+      <li>Ном, email, телефон, санаи таваллуд</li>
+      <li>Ҷойгиршавии аниқ ва таърихи ҳаракатҳо</li>
+      <li>Тамосҳо, СМС, занг</li>
+      <li>Идентификаторҳои реклама (Advertising ID)</li>
+      <li>Маълумоти шахсии пардохт (барнома ройгон аст)</li>
+    </ul>
+
+    <h2>3. Чаро мо маълумотро истифода мебарем</h2>
+    <ul>
+      <li><strong>Акс ва овоз</strong> — барои ташхиси AI бемориҳои растаниҳо ва ҷавоб ба саволҳо оид ба нигоҳубин.</li>
+      <li><strong>Ҷойгиршавӣ</strong> — танҳо барои нишон додани ҳавои ҳозира ва тавсияҳои обдиҳӣ.</li>
+      <li>Мо маълумоти шуморо барои реклама, профилбандӣ ё фурӯш ба шахсони сеюм <strong>истифода НАМЕБАРЕМ</strong>.</li>
+    </ul>
+
+    <h2>4. Хидматҳои тарафи сеюм</h2>
+    <p>Барнома хидматҳои зеринро истифода мебарад:</p>
+    <ul>
+      <li><strong>Google Gemini AI</strong> (Google LLC) — барои таҳлили акс ва овоз.<br>
+      Сиёсат: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+      <li><strong>Vercel</strong> (Vercel Inc.) — хостинги API-сервери мо.<br>
+      Сиёсат: <a href="https://vercel.com/legal/privacy-policy" target="_blank">https://vercel.com/legal/privacy-policy</a></li>
+      <li><strong>Open-Meteo</strong> (open-meteo.com) — маълумоти ҳаво, бе авторизатсия.<br>
+      Сиёсат: <a href="https://open-meteo.com/en/terms" target="_blank">https://open-meteo.com/en/terms</a></li>
+      <li><strong>Expo / EAS</strong> (Expo Inc.) — навсозиҳои барнома тариқи ҳаво (OTA).<br>
+      Сиёсат: <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
+    </ul>
+
+    <h2>5. Нигоҳдорӣ ва нест кардани маълумот</h2>
+    <ul>
+      <li>Акс ва овоз тариқи сервери мо <strong>транзит</strong> мегузаранд — мо онҳоро нигоҳ намедорем. Google Gemini метавонад онҳоро муваққатӣ барои коркард мувофиқи сиёсати худ истифода кунад.</li>
+      <li>Маълумоти маҳаллӣ дар дастгоҳи шумо то нест кардани барнома ё тоза кардани дастӣ дар худи барнома (таърих, рӯзнома) нигоҳ дошта мешавад.</li>
+    </ul>
+
+    <h2>6. Иҷозатҳои барнома</h2>
+    <ul>
+      <li><strong>Камера</strong> — барои аксбардории растаниҳо.</li>
+      <li><strong>Галерея / медиа</strong> — барои интихоби акс аз галерея.</li>
+      <li><strong>Микрофон</strong> — барои саволҳои овозӣ.</li>
+      <li><strong>Ҷойгиршавии тахминӣ</strong> — барои маслиҳатҳои ҳавошиносӣ (ихтиёрист).</li>
+      <li><strong>Огоҳномаҳо</strong> — барои ёдоварӣ дар бораи обдиҳӣ ва ғизо додан.</li>
+      <li><strong>Интернет</strong> — барои тамос бо AI-сервер.</li>
+    </ul>
+
+    <h2>7. Кӯдакон</h2>
+    <p>Барнома махсус барои кӯдакони то 13-сола пешбинӣ нашудааст ва бошуурона маълумоти шахсии онҳоро ҷамъ намекунад.</p>
+
+    <h2>8. Тағйирот дар Сиёсат</h2>
+    <p>Мо метавонем ин Сиёсатро навсозӣ кунем. Версияи актуалӣ ҳамеша дар ҳамин саҳифа бо нишондоди санаи навсозии охирин ҷой дода мешавад.</p>
+
+    <h2>9. Ҳуқуқҳои шумо</h2>
+    <p>Шумо метавонед ҳар лаҳза:</p>
+    <ul>
+      <li>Таърихи ташхисҳоро дар танзимоти барнома тоза кунед.</li>
+      <li>Ҳар як растаниро аз рӯзнома нест кунед.</li>
+      <li>Ҷойгиршавӣ ва огоҳномаҳоро дар танзимоти дастгоҳ хомӯш кунед.</li>
+      <li>Барномаро нест кунед — тамоми маълумоти маҳаллӣ нест мегардад.</li>
+    </ul>
+
+    <div class="contact-box">
+      <strong>Тамос оид ба масъалаҳои махфият:</strong><br>
+      📧 <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a><br>
+      Сатторов Носирҷон, Ҷумҳурии Тоҷикистон
+    </div>
+  </section>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="lang" id="en">
+    <p class="meta">Last updated: April 28, 2026</p>
+
+    <p>This Privacy Policy describes how the <strong>Plant Doctor</strong> mobile application ("App", "we", "us") collects, uses, and protects user information. By using the App, you agree to the terms of this Policy.</p>
+
+    <h2>1. Developer</h2>
+    <p>The App is developed by <strong>Nosirjon Sattorov</strong> (individual, Republic of Tajikistan).<br>
+    Contact: <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a></p>
+
+    <h2>2. What Data We Collect</h2>
+
+    <h3>2.1. Data sent to our server</h3>
+    <ul>
+      <li><strong>Plant photos</strong> — when you photograph a leaf or plant for diagnosis, the photo is sent to our server in Base64 format for AI analysis.</li>
+      <li><strong>Voice messages</strong> — when you use the "Voice Agronomist" feature, audio is sent to our server for recognition and AI response.</li>
+      <li><strong>Approximate location</strong> — for the weather hint feature, we request your device's coordinates. Coordinates are sent only to the open-meteo.com weather service and are not stored on our server.</li>
+    </ul>
+
+    <h3>2.2. Data stored ONLY on your device</h3>
+    <ul>
+      <li>Diagnosis history (up to 50 entries)</li>
+      <li>Plant journal (photos, names, notes, watering and fertilizing dates)</li>
+      <li>App settings (language, reminder intervals)</li>
+      <li>Local notification IDs</li>
+    </ul>
+    <p>This data is stored in the device's local storage (<code>AsyncStorage</code>) and is <strong>never transmitted to our servers or third parties</strong>. When you uninstall the app, this data is also removed.</p>
+
+    <h3>2.3. Data we DO NOT collect</h3>
+    <ul>
+      <li>Name, email, phone, date of birth</li>
+      <li>Precise location or movement history</li>
+      <li>Contacts, SMS, calls</li>
+      <li>Advertising IDs</li>
+      <li>Payment information (the app is free)</li>
+    </ul>
+
+    <h2>3. How We Use the Data</h2>
+    <ul>
+      <li><strong>Photos and audio</strong> — for AI diagnosis of plant diseases and answering plant care questions.</li>
+      <li><strong>Location</strong> — only to display current weather and watering recommendations.</li>
+      <li>We <strong>do not</strong> use your data for advertising, profiling, or selling to third parties.</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>The App uses the following third-party services:</p>
+    <ul>
+      <li><strong>Google Gemini AI</strong> (Google LLC) — for photo and audio analysis.<br>
+      Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+      <li><strong>Vercel</strong> (Vercel Inc.) — hosting our server API.<br>
+      Policy: <a href="https://vercel.com/legal/privacy-policy" target="_blank">https://vercel.com/legal/privacy-policy</a></li>
+      <li><strong>Open-Meteo</strong> (open-meteo.com) — weather data, no authentication required.<br>
+      Policy: <a href="https://open-meteo.com/en/terms" target="_blank">https://open-meteo.com/en/terms</a></li>
+      <li><strong>Expo / EAS</strong> (Expo Inc.) — over-the-air app updates (OTA).<br>
+      Policy: <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
+    </ul>
+
+    <h2>5. Data Storage and Deletion</h2>
+    <ul>
+      <li>Photos and audio pass through our server in <strong>transit</strong> — we do not store them. Google Gemini may temporarily use them for processing per its own policy.</li>
+      <li>Local data remains on your device until you uninstall the app or manually clear it within the app (history, journal).</li>
+    </ul>
+
+    <h2>6. App Permissions</h2>
+    <ul>
+      <li><strong>Camera</strong> — to photograph plants.</li>
+      <li><strong>Gallery / media</strong> — to pick photos from your gallery.</li>
+      <li><strong>Microphone</strong> — for voice questions.</li>
+      <li><strong>Approximate location</strong> — for weather hints (optional, can be denied).</li>
+      <li><strong>Notifications</strong> — for watering and fertilizing reminders.</li>
+      <li><strong>Internet</strong> — to connect to the AI server.</li>
+    </ul>
+
+    <h2>7. Children</h2>
+    <p>The App is not specifically intended for children under 13 and does not knowingly collect their personal data.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this Policy. The current version is always published on this page with the date of the last update.</p>
+
+    <h2>9. Your Rights</h2>
+    <p>You can at any time:</p>
+    <ul>
+      <li>Clear the diagnosis history in the app settings.</li>
+      <li>Delete any plant from the journal.</li>
+      <li>Disable location and notifications in your device settings.</li>
+      <li>Uninstall the app — all local data will be erased.</li>
+    </ul>
+
+    <div class="contact-box">
+      <strong>Privacy contact:</strong><br>
+      📧 <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a><br>
+      Nosirjon Sattorov, Republic of Tajikistan
+    </div>
+  </section>
+
+  <footer>
+    Plant Doctor © 2026 Nosirjon Sattorov · All Rights Reserved
+  </footer>
+</div>
+
+<script>
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.dataset.lang;
+      document.querySelectorAll('.lang-switch button').forEach(b => b.classList.toggle('active', b === btn));
+      document.querySelectorAll('section.lang').forEach(s => s.classList.toggle('active', s.id === lang));
+      document.documentElement.lang = lang === 'tj' ? 'tg' : lang;
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  });
+</script>
+
+</body>
+</html>
