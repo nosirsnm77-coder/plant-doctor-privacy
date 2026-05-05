@@ -2,350 +2,1324 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#E4EFD0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F0C" media="(prefers-color-scheme: dark)">
+<meta name="description" content="Plant Doctor Privacy Policy — GDPR, CCPA, COPPA, Tajikistan Law compliant. RU / TJ / EN.">
 <title>Privacy Policy — Plant Doctor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
 <style>
-  :root { --primary:#16a34a; --bg:#f9fafb; --text:#111827; --muted:#6b7280; --border:#e5e7eb; }
-  * { box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background:var(--bg); color:var(--text); margin:0; padding:0; line-height:1.65; }
-  .container { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
-  header { background: linear-gradient(135deg, #16a34a, #22c55e); color:#fff; padding: 28px 20px; text-align:center; border-radius: 0 0 16px 16px; }
-  header h1 { margin:0 0 6px; font-size: 26px; }
-  header p { margin:0; opacity:.95; font-size: 14px; }
-  .lang-switch { display:flex; justify-content:center; gap:8px; margin: 20px 0 30px; flex-wrap: wrap; }
-  .lang-switch button { background:#fff; border:1px solid var(--border); color:var(--text); padding:8px 16px; border-radius: 999px; cursor:pointer; font-size: 14px; font-weight: 500; transition: all .15s; }
-  .lang-switch button.active { background: var(--primary); color:#fff; border-color: var(--primary); }
-  .lang-switch button:hover:not(.active) { background:#f3f4f6; }
-  section.lang { display:none; }
-  section.lang.active { display:block; }
-  h2 { color: var(--primary); margin-top: 32px; font-size: 20px; border-bottom: 2px solid var(--border); padding-bottom: 6px; }
-  h3 { font-size: 16px; margin-top: 22px; }
-  ul { padding-left: 22px; }
-  li { margin-bottom: 6px; }
-  .meta { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
-  .contact-box { background:#fff; border:1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin-top: 24px; }
-  .contact-box a { color: var(--primary); text-decoration:none; }
-  .contact-box a:hover { text-decoration: underline; }
-  footer { text-align:center; color: var(--muted); font-size: 13px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); }
-  code { background:#f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  /* ============================================================
+     Plant Doctor — Privacy Policy · Design System v3.0
+     Style: Light Minimalism + Sage · Tone: Formal Legal Document
+     ============================================================ */
+  :root {
+    --bg: #E4EFD0;
+    --surface: #FFFFFF;
+    --surface-2: #D7E4BB;
+    --border: #C9D8A6;
+    --border-strong: #B5C68B;
+    --text: #0F1B12;
+    --text-2: #475569;
+    --text-3: #94A3B8;
+    --brand: #16A34A;
+    --brand-hover: #15803D;
+    --brand-soft: #DCFCE7;
+    --brand-ink: #052E16;
+    --danger: #B91C1C;
+    --warn: #B45309;
+    --info: #0369A1;
+    --ease: cubic-bezier(0.2, 0.6, 0.2, 1);
+    --dur-fast: 120ms;
+    --dur: 200ms;
+    --shadow-1: 0 1px 2px rgba(15, 27, 18, 0.04);
+    --shadow-2: 0 2px 8px rgba(15, 27, 18, 0.06), 0 1px 2px rgba(15, 27, 18, 0.04);
+    --shadow-focus: 0 0 0 3px rgba(22, 163, 74, 0.2);
+    --r-sm: 8px;
+    --r-md: 12px;
+    --r-lg: 16px;
+    --r-xl: 24px;
+    --r-full: 999px;
+    --serif: 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0A0F0C; --surface: #111714; --surface-2: #161D19;
+      --border: #1F2A23; --border-strong: #2A372F;
+      --text: #F4F4EE; --text-2: #BCC4BD; --text-3: #7B847D;
+      --brand: #22C55E; --brand-hover: #16A34A; --brand-soft: #14291C;
+    }
+  }
+  html[data-theme="light"] {
+    --bg: #E4EFD0; --surface: #FFFFFF; --surface-2: #D7E4BB;
+    --border: #C9D8A6; --border-strong: #B5C68B;
+    --text: #0F1B12; --text-2: #475569; --text-3: #94A3B8;
+    --brand: #16A34A; --brand-hover: #15803D; --brand-soft: #DCFCE7;
+  }
+  html[data-theme="dark"] {
+    --bg: #0A0F0C; --surface: #111714; --surface-2: #161D19;
+    --border: #1F2A23; --border-strong: #2A372F;
+    --text: #F4F4EE; --text-2: #BCC4BD; --text-3: #7B847D;
+    --brand: #22C55E; --brand-hover: #16A34A; --brand-soft: #14291C;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  * { margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+    line-height: 1.65;
+  }
+  html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+
+  .wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: clamp(20px, 4vw, 40px) clamp(16px, 4vw, 24px) 80px;
+  }
+
+  /* ===== Top bar ===== */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  .brand-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: -0.01em;
+  }
+  .brand-mark svg { color: var(--brand); }
+  .brand-mark:hover { color: var(--brand-hover); }
+  .brand-mark:focus-visible { outline: none; box-shadow: var(--shadow-focus); border-radius: 4px; }
+
+  .theme-toggle {
+    width: 36px; height: 36px;
+    border-radius: var(--r-full);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-2);
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: all var(--dur-fast) var(--ease);
+  }
+  .theme-toggle:hover { background: var(--surface-2); color: var(--text); }
+  .theme-toggle:focus-visible { outline: none; box-shadow: var(--shadow-focus); }
+  .theme-toggle .sun { display: none; }
+  .theme-toggle .moon { display: block; }
+  html[data-theme="dark"] .theme-toggle .sun { display: block; }
+  html[data-theme="dark"] .theme-toggle .moon { display: none; }
+  @media (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]) .theme-toggle .sun { display: block; }
+    html:not([data-theme="light"]) .theme-toggle .moon { display: none; }
+  }
+
+  /* ===== Document header (formal) ===== */
+  .doc-header {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-xl);
+    padding: clamp(28px, 5vw, 48px) clamp(24px, 4vw, 40px);
+    margin-bottom: 24px;
+    box-shadow: var(--shadow-1);
+  }
+  .doc-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 4px 10px;
+    background: var(--brand-soft);
+    color: var(--brand-hover);
+    border-radius: var(--r-full);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .doc-title {
+    font-family: var(--serif);
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+  .doc-subtitle {
+    color: var(--text-2);
+    font-size: 16px;
+    margin-bottom: 28px;
+    max-width: 540px;
+  }
+  .doc-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  .doc-meta dt {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-3);
+    margin-bottom: 4px;
+  }
+  .doc-meta dd {
+    font-size: 14px;
+    color: var(--text);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+  }
+  .doc-meta dd code {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    padding: 1px 6px;
+    border-radius: var(--r-sm);
+    font-size: 13px;
+    font-family: ui-monospace, 'SF Mono', Menlo, Monaco, Consolas, monospace;
+  }
+
+  /* ===== Language switcher ===== */
+  .langs {
+    display: inline-flex;
+    gap: 4px;
+    padding: 4px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-full);
+    margin-bottom: 32px;
+    box-shadow: var(--shadow-1);
+  }
+  .lang-btn {
+    background: transparent;
+    color: var(--text-2);
+    border: none;
+    border-radius: var(--r-full);
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all var(--dur-fast) var(--ease);
+  }
+  .lang-btn:hover { color: var(--text); }
+  .lang-btn:focus-visible { outline: none; box-shadow: var(--shadow-focus); }
+  .lang-btn.active {
+    background: var(--brand);
+    color: var(--brand-ink);
+  }
+  html[data-theme="dark"] .lang-btn.active { color: #052E16; }
+
+  /* ===== Table of contents ===== */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 20px 24px;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow-1);
+  }
+  .toc summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+  }
+  .toc summary::-webkit-details-marker { display: none; }
+  .toc summary::after {
+    content: '';
+    margin-left: auto;
+    width: 8px; height: 8px;
+    border-right: 2px solid var(--text-2);
+    border-bottom: 2px solid var(--text-2);
+    transform: rotate(45deg);
+    transition: transform var(--dur) var(--ease);
+  }
+  .toc[open] summary::after { transform: rotate(-135deg); }
+  .toc ol {
+    list-style: none;
+    counter-reset: toc;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 4px 16px;
+  }
+  .toc li { counter-increment: toc; }
+  .toc li a {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 6px 0;
+    color: var(--text-2);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color var(--dur-fast) var(--ease);
+  }
+  .toc li a::before {
+    content: counter(toc, decimal-leading-zero) '.';
+    color: var(--text-3);
+    font-size: 12px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+    min-width: 24px;
+  }
+  .toc li a:hover { color: var(--brand-hover); }
+
+  /* ===== Sections ===== */
+  section.lang { display: none; }
+  section.lang.active { display: block; }
+
+  .preamble {
+    background: var(--surface);
+    border-left: 3px solid var(--brand);
+    border-radius: 0 var(--r-md) var(--r-md) 0;
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.7;
+  }
+  .preamble strong { font-weight: 600; }
+
+  article.section {
+    margin-bottom: 40px;
+    padding-top: 8px;
+  }
+  article.section:target h2 {
+    color: var(--brand-hover);
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(22px, 3vw, 26px);
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--text);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    scroll-margin-top: 16px;
+  }
+  h2 .num {
+    flex-shrink: 0;
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--brand-hover);
+    background: var(--brand-soft);
+    padding: 4px 8px;
+    border-radius: var(--r-sm);
+    font-variant-numeric: tabular-nums;
+  }
+  h2 .anchor {
+    margin-left: auto;
+    color: var(--text-3);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--sans);
+    font-weight: 400;
+    opacity: 0;
+    transition: opacity var(--dur-fast) var(--ease);
+  }
+  h2:hover .anchor { opacity: 1; }
+  h2 .anchor:hover { color: var(--brand-hover); }
+  h2 .anchor:focus-visible { opacity: 1; outline: none; box-shadow: var(--shadow-focus); border-radius: 4px; }
+
+  h3 {
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 24px 0 10px;
+    letter-spacing: -0.005em;
+    text-transform: none;
+  }
+  h3 .sub-num {
+    color: var(--text-3);
+    font-weight: 500;
+    margin-right: 6px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  p { margin-bottom: 12px; color: var(--text-2); font-size: 15px; }
+  p strong { color: var(--text); font-weight: 600; }
+  p a, li a, .contact-card a {
+    color: var(--brand-hover);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--dur-fast) var(--ease);
+  }
+  p a:hover, li a:hover, .contact-card a:hover { border-bottom-color: currentColor; }
+  p a:focus-visible, li a:focus-visible, .contact-card a:focus-visible { outline: none; box-shadow: var(--shadow-focus); border-radius: 4px; }
+
+  ul, ol.list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 16px;
+  }
+  ul li, ol.list li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    color: var(--text-2);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  ul li::before {
+    content: '';
+    position: absolute;
+    left: 6px; top: 11px;
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--brand);
+  }
+  ol.list { counter-reset: olist; }
+  ol.list li { counter-increment: olist; }
+  ol.list li::before {
+    content: counter(olist) '.';
+    position: absolute;
+    left: 0; top: 0;
+    color: var(--text-3);
+    font-weight: 600;
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+  }
+  ul li strong, ol.list li strong { color: var(--text); font-weight: 600; }
+
+  code {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    padding: 1px 6px;
+    border-radius: var(--r-sm);
+    font-size: 13px;
+    font-family: ui-monospace, 'SF Mono', Menlo, Monaco, Consolas, monospace;
+    color: var(--text);
+  }
+
+  /* ===== Definitions / glossary ===== */
+  dl.defs {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+  dl.defs dt {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  dl.defs dt:first-child { margin-top: 0; }
+  dl.defs dd {
+    color: var(--text-2);
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  /* ===== Legal references ===== */
+  .legal-ref {
+    display: inline-block;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: var(--r-sm);
+    padding: 1px 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text);
+    font-family: ui-monospace, 'SF Mono', Menlo, Monaco, Consolas, monospace;
+    white-space: nowrap;
+  }
+
+  /* ===== Notice / callout ===== */
+  .notice {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--warn);
+    border-radius: 0 var(--r-md) var(--r-md) 0;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-size: 14px;
+    color: var(--text);
+  }
+  .notice .label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--warn);
+    margin-bottom: 6px;
+  }
+
+  /* ===== Contact card ===== */
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 24px 28px;
+    margin-top: 32px;
+    box-shadow: var(--shadow-1);
+  }
+  .contact-card .label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--brand-hover);
+    margin-bottom: 16px;
+  }
+  .contact-card h3 {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 12px;
+  }
+  .contact-card .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: var(--text);
+  }
+  .contact-card .row svg { color: var(--brand); flex-shrink: 0; }
+  .contact-card .who { color: var(--text-2); font-size: 14px; margin-top: 8px; padding-top: 12px; border-top: 1px solid var(--border); }
+
+  /* ===== Footer ===== */
+  footer {
+    text-align: center;
+    color: var(--text-3);
+    font-size: 13px;
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+  }
+  footer .links { margin-top: 8px; display: inline-flex; gap: 16px; }
+  footer a { color: var(--text-2); text-decoration: none; transition: color var(--dur-fast) var(--ease); }
+  footer a:hover { color: var(--brand-hover); }
+
+  /* ===== Reduced motion ===== */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* ===== Print ===== */
+  @media print {
+    :root { --bg: #FFFFFF; --surface: #FFFFFF; --surface-2: #F4F4F0; --border: #DDD; --text: #000; --text-2: #333; --text-3: #666; }
+    body { background: #FFF; color: #000; }
+    .topbar, .langs, .theme-toggle, .toc summary::after { display: none; }
+    .toc[open] summary { display: none; }
+    .toc[open] ol { display: block; column-count: 2; }
+    .doc-header, .toc, .preamble, .contact-card, dl.defs, .notice {
+      box-shadow: none; break-inside: avoid;
+    }
+    h2, h3 { break-after: avoid; }
+    article.section { break-inside: avoid-page; }
+    a { color: inherit; text-decoration: underline; }
+    a[href^="http"]::after { content: ' (' attr(href) ')'; font-size: 11px; color: #666; }
+  }
 </style>
 </head>
 <body>
 
-<header>
-  <h1>🌿 Plant Doctor — Privacy Policy</h1>
-  <p>Политика конфиденциальности · Сиёсати махфият · Privacy Policy</p>
-</header>
-
-<div class="container">
-
-  <div class="lang-switch">
-    <button class="active" data-lang="ru">🇷🇺 Русский</button>
-    <button data-lang="tj">🇹🇯 Тоҷикӣ</button>
-    <button data-lang="en">🇬🇧 English</button>
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand-mark" href="https://nosirsnm77-coder.github.io/plant-doctor-stats/">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+        <path d="M2 21c0-3 1.85-5.36 5.08-6"/>
+      </svg>
+      Plant Doctor
+    </a>
+    <button class="theme-toggle" id="themeBtn" aria-label="Toggle theme" type="button">
+      <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+      </svg>
+      <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
   </div>
 
-  <!-- ============ РУССКИЙ ============ -->
+  <header class="doc-header">
+    <div class="doc-eyebrow">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+      <span data-i18n="eyebrow">Privacy Policy · GDPR · CCPA</span>
+    </div>
+    <h1 class="doc-title" data-i18n="docTitle">Политика конфиденциальности</h1>
+    <p class="doc-subtitle" data-i18n="docSubtitle">Plant Doctor — мобильное приложение для AI-диагностики растений. Документ соответствует GDPR (ЕС), CCPA (Калифорния), COPPA (США) и Закону РТ № 1537 от 03.08.2018 «О защите персональных данных».</p>
+
+    <dl class="doc-meta">
+      <div><dt data-i18n="metaEffective">Дата вступления в силу</dt><dd data-i18n="effectiveDate">5 мая 2026 г.</dd></div>
+      <div><dt data-i18n="metaVersion">Версия</dt><dd>2.0</dd></div>
+      <div><dt data-i18n="metaApp">Идентификатор приложения</dt><dd><code>com.nosirjon.plantdoctor</code></dd></div>
+      <div><dt data-i18n="metaController">Оператор данных</dt><dd data-i18n="controllerName">Солиев Носирджон</dd></div>
+    </dl>
+  </header>
+
+  <div class="langs" role="group" aria-label="Language">
+    <button class="lang-btn active" data-lang="ru" type="button">Русский</button>
+    <button class="lang-btn" data-lang="tj" type="button">Тоҷикӣ</button>
+    <button class="lang-btn" data-lang="en" type="button">English</button>
+  </div>
+
+  <details class="toc" open>
+    <summary data-i18n="tocTitle">Оглавление</summary>
+    <ol id="tocList"></ol>
+  </details>
+
+  <!-- ============================================================
+                            РУССКИЙ
+       ============================================================ -->
   <section class="lang active" id="ru">
-    <p class="meta">Последнее обновление: 28 апреля 2026 г.</p>
 
-    <p>Настоящая Политика конфиденциальности описывает, как мобильное приложение <strong>Plant Doctor</strong> («Приложение», «мы», «нас») собирает, использует и защищает информацию пользователей. Используя Приложение, вы соглашаетесь с условиями этой Политики.</p>
-
-    <h2>1. Разработчик</h2>
-    <p>Приложение разработано <strong>Сатторовым Носирҷоном</strong> (физическое лицо, Республика Таджикистан).<br>
-    Контакт: <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a></p>
-
-    <h2>2. Какие данные мы собираем</h2>
-
-    <h3>2.1. Данные, которые отправляются на наш сервер</h3>
-    <ul>
-      <li><strong>Фотографии растений</strong> — когда вы фотографируете лист или растение для диагностики, фото в формате Base64 передаётся на наш сервер для AI-анализа.</li>
-      <li><strong>Голосовые сообщения</strong> — когда вы используете функцию «Голосовой агроном», аудио передаётся на сервер для распознавания и AI-ответа.</li>
-      <li><strong>Геолокация (приблизительная)</strong> — для функции погодных подсказок мы запрашиваем координаты вашего устройства. Координаты передаются только сервису погоды open-meteo.com и не сохраняются на нашем сервере.</li>
-    </ul>
-
-    <h3>2.2. Данные, которые хранятся ТОЛЬКО на вашем устройстве</h3>
-    <ul>
-      <li>История диагнозов (до 50 записей)</li>
-      <li>Дневник растений (фото, имена, заметки, даты полива и подкормки)</li>
-      <li>Настройки приложения (язык, интервалы напоминаний)</li>
-      <li>Идентификаторы локальных уведомлений</li>
-    </ul>
-    <p>Эти данные хранятся в локальном хранилище устройства (<code>AsyncStorage</code>) и <strong>никогда не передаются на наши серверы или третьим лицам</strong>. При удалении приложения они также удаляются.</p>
-
-    <h3>2.3. Данные, которые мы НЕ собираем</h3>
-    <ul>
-      <li>Имя, email, телефон, дата рождения</li>
-      <li>Точное местоположение и история перемещений</li>
-      <li>Контакты, СМС, звонки</li>
-      <li>Идентификаторы рекламы (Advertising ID)</li>
-      <li>Личные данные платежей (приложение бесплатное)</li>
-    </ul>
-
-    <h2>3. Зачем мы используем данные</h2>
-    <ul>
-      <li><strong>Фото и аудио</strong> — для AI-диагностики болезней растений и ответов на вопросы по уходу.</li>
-      <li><strong>Геолокация</strong> — только для отображения текущей погоды и рекомендаций по поливу.</li>
-      <li>Мы <strong>не используем</strong> ваши данные для рекламы, профилирования или продажи третьим сторонам.</li>
-    </ul>
-
-    <h2>4. Сторонние сервисы</h2>
-    <p>Приложение использует следующие сторонние сервисы:</p>
-    <ul>
-      <li><strong>Google Gemini AI</strong> (Google LLC) — для анализа фото и аудио.<br>
-      Политика: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-      <li><strong>Vercel</strong> (Vercel Inc.) — хостинг нашего серверного API.<br>
-      Политика: <a href="https://vercel.com/legal/privacy-policy" target="_blank">https://vercel.com/legal/privacy-policy</a></li>
-      <li><strong>Open-Meteo</strong> (open-meteo.com) — данные о погоде, не требует авторизации.<br>
-      Политика: <a href="https://open-meteo.com/en/terms" target="_blank">https://open-meteo.com/en/terms</a></li>
-      <li><strong>Expo / EAS</strong> (Expo Inc.) — обновления приложения по воздуху (OTA).<br>
-      Политика: <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
-    </ul>
-
-    <h2>5. Хранение и удаление данных</h2>
-    <ul>
-      <li>Фото и аудио передаются через наш сервер транзитом — <strong>мы их не сохраняем</strong>. Google Gemini может временно использовать их для обработки в соответствии со своей политикой.</li>
-      <li>Локальные данные хранятся на вашем устройстве до удаления приложения или ручной очистки в самом приложении (история, дневник).</li>
-    </ul>
-
-    <h2>6. Разрешения приложения</h2>
-    <ul>
-      <li><strong>Камера</strong> — для съёмки растений.</li>
-      <li><strong>Галерея / медиа</strong> — для выбора фото из галереи.</li>
-      <li><strong>Микрофон</strong> — для голосовых вопросов.</li>
-      <li><strong>Геолокация (приблизительная)</strong> — для погодных подсказок (необязательно, можно отказать).</li>
-      <li><strong>Уведомления</strong> — для напоминаний о поливе и подкормке.</li>
-      <li><strong>Интернет</strong> — для связи с AI-сервером.</li>
-    </ul>
-
-    <h2>7. Дети</h2>
-    <p>Приложение не предназначено специально для детей до 13 лет и не собирает осознанно их персональных данных.</p>
-
-    <h2>8. Изменения в Политике</h2>
-    <p>Мы можем обновлять эту Политику. Актуальная версия всегда публикуется на этой странице с указанием даты последнего обновления.</p>
-
-    <h2>9. Ваши права</h2>
-    <p>Вы можете в любой момент:</p>
-    <ul>
-      <li>Очистить историю диагнозов в настройках приложения.</li>
-      <li>Удалить любое растение из дневника.</li>
-      <li>Отключить геолокацию и уведомления в настройках устройства.</li>
-      <li>Удалить приложение — все локальные данные будут стёрты.</li>
-    </ul>
-
-    <div class="contact-box">
-      <strong>Контакт по вопросам конфиденциальности:</strong><br>
-      📧 <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a><br>
-      Сатторов Носирҷон, Республика Таджикистан
+    <div class="preamble">
+      Настоящая Политика конфиденциальности (далее — «<strong>Политика</strong>») регулирует обработку персональных данных пользователей мобильного приложения <strong>Plant Doctor</strong> (далее — «<strong>Приложение</strong>») и составлена в соответствии с Общим регламентом ЕС о защите персональных данных <span class="legal-ref">Regulation (EU) 2016/679 — GDPR</span>, Законом штата Калифорния о защите прав потребителей <span class="legal-ref">Cal. Civ. Code §1798.100 — CCPA</span>, Законом США о защите конфиденциальности детей в Интернете <span class="legal-ref">15 U.S.C. §6501 — COPPA</span> и Законом Республики Таджикистан «О защите персональных данных» от 03.08.2018 № 1537. Используя Приложение, вы подтверждаете ознакомление с настоящей Политикой и согласие с условиями обработки данных.
     </div>
+
+    <article class="section" id="ru-1">
+      <h2><span class="num">§ 1</span>Определения и сфера применения<a class="anchor" href="#ru-1" aria-label="Постоянная ссылка">#</a></h2>
+      <dl class="defs">
+        <dt>Персональные данные</dt><dd>Любая информация, относящаяся к идентифицированному или идентифицируемому физическому лицу (Art. 4(1) GDPR).</dd>
+        <dt>Обработка</dt><dd>Любое действие или совокупность действий, совершаемых с персональными данными (Art. 4(2) GDPR).</dd>
+        <dt>Оператор данных (Data Controller)</dt><dd>Физическое лицо, определяющее цели и средства обработки данных (Art. 4(7) GDPR).</dd>
+        <dt>Субъект данных (Data Subject)</dt><dd>Физическое лицо, к которому относятся персональные данные.</dd>
+        <dt>Обработчик (Processor)</dt><dd>Третья сторона, обрабатывающая данные по поручению Оператора.</dd>
+      </dl>
+      <p>Настоящая Политика применяется ко всем пользователям Приложения вне зависимости от территории их пребывания, включая, в частности, граждан и резидентов ЕС/ЕЭП, штата Калифорния (США) и Республики Таджикистан.</p>
+    </article>
+
+    <article class="section" id="ru-2">
+      <h2><span class="num">§ 2</span>Оператор данных и контактное лицо<a class="anchor" href="#ru-2" aria-label="Постоянная ссылка">#</a></h2>
+      <p><strong>Оператор данных:</strong> Солиев Носирджон, физическое лицо, Республика Таджикистан.</p>
+      <p><strong>Контакт по вопросам персональных данных:</strong> <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a></p>
+      <p>Запросы субъектов данных рассматриваются в сроки, установленные применимым законодательством: до 30 (тридцати) календарных дней по GDPR (Art. 12(3)); до 45 (сорока пяти) календарных дней по CCPA с возможностью продления.</p>
+    </article>
+
+    <article class="section" id="ru-3">
+      <h2><span class="num">§ 3</span>Категории обрабатываемых данных<a class="anchor" href="#ru-3" aria-label="Постоянная ссылка">#</a></h2>
+
+      <h3><span class="sub-num">3.1</span>Данные, передаваемые на сервер Оператора</h3>
+      <ul>
+        <li><strong>Изображения растений</strong> — фотография в кодировке Base64, передаваемая для целей AI-диагностики.</li>
+        <li><strong>Аудиозаписи</strong> — голосовые запросы для функции «Голосовой агроном».</li>
+        <li><strong>Приблизительные геокоординаты</strong> — для отображения метеорологических данных. Координаты передаются Open-Meteo и не сохраняются Оператором.</li>
+        <li><strong>Анонимный идентификатор устройства</strong> — UUID v4, генерируемый локально, без привязки к личности, для подсчёта уникальных установок.</li>
+      </ul>
+
+      <h3><span class="sub-num">3.2</span>Данные, хранящиеся локально на устройстве пользователя</h3>
+      <ul>
+        <li>История диагнозов (до 50 записей) — <code>plant_doctor_history</code></li>
+        <li>Дневник растений (фото, наименования, заметки, расписание ухода) — <code>plant_doctor_plants</code></li>
+        <li>Настройки приложения (язык, интервалы напоминаний)</li>
+        <li>Идентификаторы локальных push-уведомлений</li>
+      </ul>
+      <p>Указанные данные хранятся в защищённом локальном хранилище <code>AsyncStorage</code> и <strong>не передаются Оператору, его обработчикам или третьим сторонам</strong>. При удалении Приложения данные уничтожаются вместе с ним.</p>
+
+      <h3><span class="sub-num">3.3</span>Категории данных, которые НЕ собираются</h3>
+      <ul>
+        <li>Имя, фамилия, дата рождения, гражданство</li>
+        <li>Адрес электронной почты, номер телефона, почтовый адрес</li>
+        <li>Точные геолокационные данные и история перемещений</li>
+        <li>Контактные книги, SMS, журналы вызовов</li>
+        <li>Рекламные идентификаторы (Advertising ID, IDFA)</li>
+        <li>Биометрические и медицинские данные</li>
+        <li>Финансовые и платёжные данные (Приложение распространяется бесплатно)</li>
+      </ul>
+    </article>
+
+    <article class="section" id="ru-4">
+      <h2><span class="num">§ 4</span>Цели и правовые основания обработки<a class="anchor" href="#ru-4" aria-label="Постоянная ссылка">#</a></h2>
+      <p>Обработка данных осуществляется на следующих правовых основаниях <span class="legal-ref">Art. 6(1) GDPR</span>:</p>
+      <ol class="list">
+        <li><strong>Согласие субъекта данных</strong> (Art. 6(1)(a)) — для обработки фотографий, аудиозаписей и геокоординат. Согласие предоставляется добровольно через предоставление соответствующих разрешений в операционной системе устройства.</li>
+        <li><strong>Законный интерес Оператора</strong> (Art. 6(1)(f)) — для анонимного подсчёта установок Приложения с целью оценки масштаба и качества предоставляемого сервиса. Указанный интерес не превалирует над фундаментальными правами и свободами субъекта данных.</li>
+        <li><strong>Исполнение договора</strong> (Art. 6(1)(b)) — для предоставления функциональности Приложения, заявленной при его установке.</li>
+      </ol>
+      <p>Согласие может быть отозвано в любой момент путём отзыва соответствующих разрешений в настройках устройства или удалением Приложения. Отзыв согласия не затрагивает законность обработки, осуществлённой до отзыва.</p>
+    </article>
+
+    <article class="section" id="ru-5">
+      <h2><span class="num">§ 5</span>Права субъектов данных<a class="anchor" href="#ru-5" aria-label="Постоянная ссылка">#</a></h2>
+      <p>Субъект данных обладает следующими правами в соответствии с GDPR (Art. 15–22) и CCPA (§§ 1798.100–1798.135):</p>
+      <ul>
+        <li><strong>Право на доступ</strong> (Art. 15 GDPR; CCPA § 1798.100) — получить информацию о факте обработки и копию данных.</li>
+        <li><strong>Право на исправление</strong> (Art. 16 GDPR) — потребовать исправления неточных данных.</li>
+        <li><strong>Право на удаление / «право быть забытым»</strong> (Art. 17 GDPR; CCPA § 1798.105) — потребовать удаления данных.</li>
+        <li><strong>Право на ограничение обработки</strong> (Art. 18 GDPR).</li>
+        <li><strong>Право на переносимость данных</strong> (Art. 20 GDPR).</li>
+        <li><strong>Право на возражение</strong> (Art. 21 GDPR; CCPA § 1798.120 — право отказаться от продажи).</li>
+        <li><strong>Право не подвергаться автоматизированному принятию решений</strong> (Art. 22 GDPR) — см. § 13 настоящей Политики.</li>
+        <li><strong>Право на недискриминацию</strong> (CCPA § 1798.125) — за реализацию прав вы не подвергаетесь ухудшению качества сервиса.</li>
+        <li><strong>Право на подачу жалобы в надзорный орган</strong> (Art. 77 GDPR) — в государстве вашего пребывания, работы или предполагаемого нарушения.</li>
+      </ul>
+      <p>Запрос направляется на адрес Оператора (см. § 2). Ответ предоставляется в течение 30 дней по GDPR; 45 дней по CCPA. При отказе в удовлетворении запроса предоставляется обоснование с указанием правового основания.</p>
+    </article>
+
+    <article class="section" id="ru-6">
+      <h2><span class="num">§ 6</span>Получатели данных и субобработчики<a class="anchor" href="#ru-6" aria-label="Постоянная ссылка">#</a></h2>
+      <p>Оператор привлекает следующих субобработчиков, действующих на основании договорных обязательств о защите данных <span class="legal-ref">Art. 28 GDPR</span>:</p>
+      <ul>
+        <li><strong>Google LLC</strong> (1600 Amphitheatre Parkway, Mountain View, CA, USA) — обработка изображений и аудио посредством Gemini API.<br>Политика: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li><strong>Vercel Inc.</strong> (340 S Lemon Ave #4133, Walnut, CA, USA) — хостинг серверного API.<br>Политика: <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">vercel.com/legal/privacy-policy</a></li>
+        <li><strong>Upstash Inc.</strong> (Wilmington, DE, USA) — Redis-хранилище для анонимного подсчёта установок.<br>Политика: <a href="https://upstash.com/trust/privacy.pdf" target="_blank" rel="noopener">upstash.com/trust/privacy</a></li>
+        <li><strong>Open-Meteo</strong> (oss.gbif.de) — поставщик метеорологических данных, не требует авторизации.<br>Политика: <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">open-meteo.com/en/terms</a></li>
+        <li><strong>Expo Inc.</strong> (Palo Alto, CA, USA) — доставка обновлений Приложения по технологии Over-The-Air (EAS Update).<br>Политика: <a href="https://expo.dev/privacy" target="_blank" rel="noopener">expo.dev/privacy</a></li>
+      </ul>
+      <p>Оператор не осуществляет продажу персональных данных в значении CCPA § 1798.140(t). Передача данных третьим сторонам в рекламных или маркетинговых целях <strong>исключена</strong>.</p>
+    </article>
+
+    <article class="section" id="ru-7">
+      <h2><span class="num">§ 7</span>Трансграничная передача данных<a class="anchor" href="#ru-7" aria-label="Постоянная ссылка">#</a></h2>
+      <p>Поскольку субобработчики, перечисленные в § 6, расположены в Соединённых Штатах Америки, обработка данных может включать трансграничную передачу за пределы Европейской экономической зоны (ЕЭЗ) и Республики Таджикистан.</p>
+      <p>Передача осуществляется на следующих правовых основаниях <span class="legal-ref">Art. 44–49 GDPR</span>:</p>
+      <ul>
+        <li>Стандартные договорные положения Европейской комиссии (<strong>Standard Contractual Clauses</strong>), утверждённые Решением (ЕС) 2021/914 от 04.06.2021 — для передач Google, Vercel, Expo и Upstash.</li>
+        <li>Дополнительные технические и организационные меры (шифрование при передаче, ограничение доступа, режим хранения), оцениваемые в рамках Transfer Impact Assessment (Schrems II).</li>
+      </ul>
+      <p>Копию применимых SCC и оценки воздействия передачи можно запросить у Оператора.</p>
+    </article>
+
+    <article class="section" id="ru-8">
+      <h2><span class="num">§ 8</span>Сроки хранения и удаление данных<a class="anchor" href="#ru-8" aria-label="Постоянная ссылка">#</a></h2>
+      <ul>
+        <li><strong>Изображения и аудиозаписи</strong> проходят через серверный API Оператора <em>транзитом</em> и не сохраняются. Google Gemini может временно использовать их для обработки в соответствии с собственной политикой и удаляет согласно своим срокам хранения.</li>
+        <li><strong>Анонимный идентификатор устройства</strong> хранится в Upstash Redis в течение всего срока эксплуатации Приложения и удаляется по запросу субъекта данных в течение 30 дней.</li>
+        <li><strong>Локальные данные</strong> (история, дневник, настройки) хранятся на устройстве пользователя до удаления Приложения или ручной очистки в самом Приложении.</li>
+      </ul>
+      <p>По истечении срока хранения данные подлежат безвозвратному удалению либо анонимизации в соответствии с принципом ограничения хранения <span class="legal-ref">Art. 5(1)(e) GDPR</span>.</p>
+    </article>
+
+    <article class="section" id="ru-9">
+      <h2><span class="num">§ 9</span>Меры безопасности<a class="anchor" href="#ru-9" aria-label="Постоянная ссылка">#</a></h2>
+      <p>В целях исполнения требований <span class="legal-ref">Art. 32 GDPR</span> Оператор применяет следующие технические и организационные меры:</p>
+      <ul>
+        <li>Транспортное шифрование TLS 1.2+ при всех сетевых соединениях (HTTPS).</li>
+        <li>Хранение API-ключей сторонних сервисов на сервере, исключающее их утечку через декомпиляцию мобильного клиента.</li>
+        <li>Минимизация собираемых данных в соответствии с принципом <em>data minimisation</em> (Art. 5(1)(c) GDPR).</li>
+        <li>Использование облачных провайдеров с сертификацией ISO/IEC 27001 и SOC 2 Type II.</li>
+        <li>Регулярный аудит зависимостей программного обеспечения на наличие уязвимостей.</li>
+      </ul>
+    </article>
+
+    <article class="section" id="ru-10">
+      <h2><span class="num">§ 10</span>Cookies и локальное хранилище<a class="anchor" href="#ru-10" aria-label="Постоянная ссылка">#</a></h2>
+      <p>Приложение является нативным мобильным приложением и <strong>не использует HTTP cookies</strong>. Локальное хранилище <code>AsyncStorage</code> применяется исключительно для функциональных целей (история диагнозов, настройки) и не подлежит регулированию ePrivacy Directive 2002/58/EC в части требования о согласии на cookies.</p>
+    </article>
+
+    <article class="section" id="ru-11">
+      <h2><span class="num">§ 11</span>Защита персональных данных детей<a class="anchor" href="#ru-11" aria-label="Постоянная ссылка">#</a></h2>
+      <p>Приложение <strong>не предназначено для лиц младше 13 лет</strong> в соответствии с <span class="legal-ref">15 U.S.C. § 6501 — COPPA</span> и <span class="legal-ref">Art. 8 GDPR</span> (для государств — членов ЕС, повышающих возрастной ценз до 16 лет, применяется соответствующий национальный возраст согласия).</p>
+      <p>Оператор не осуществляет осознанного сбора персональных данных детей. В случае выявления факта обработки данных лица, не достигшего применимого возрастного ценза, Оператор незамедлительно прекращает обработку и удаляет соответствующие данные.</p>
+    </article>
+
+    <article class="section" id="ru-12">
+      <h2><span class="num">§ 12</span>Уведомление о нарушении безопасности<a class="anchor" href="#ru-12" aria-label="Постоянная ссылка">#</a></h2>
+      <p>При выявлении инцидента, повлекшего или могущего повлечь нарушение защиты персональных данных, Оператор уведомляет:</p>
+      <ul>
+        <li>Соответствующий <strong>надзорный орган</strong> в течение <strong>72 часов</strong> с момента обнаружения нарушения <span class="legal-ref">Art. 33 GDPR</span>.</li>
+        <li><strong>Субъектов данных</strong> — без неоправданной задержки, если нарушение представляет высокий риск для их прав и свобод <span class="legal-ref">Art. 34 GDPR</span>.</li>
+      </ul>
+    </article>
+
+    <article class="section" id="ru-13">
+      <h2><span class="num">§ 13</span>Автоматизированное принятие решений и AI<a class="anchor" href="#ru-13" aria-label="Постоянная ссылка">#</a></h2>
+      <div class="notice">
+        <span class="label">⚠ Существенное условие</span>
+        Plant Doctor использует системы искусственного интеллекта (Google Gemini и алгоритмы машинного обучения) для генерации диагностических заключений и рекомендаций. Данные процессы являются <strong>автоматизированной обработкой</strong> в значении <span class="legal-ref">Art. 22 GDPR</span>, однако <strong>не порождают юридических последствий</strong> в отношении субъекта данных и не оказывают на него аналогичного существенного влияния.
+      </div>
+      <ol class="list">
+        <li><strong>Информационно-справочный характер.</strong> Результаты, предоставляемые Приложением, носят исключительно информационно-рекомендательный характер и <strong>не являются</strong> заключением профессионального агронома, фитопатолога, инженера сельского хозяйства или иного дипломированного специалиста, не заменяя такую консультацию.</li>
+        <li><strong>Возможность ошибок AI.</strong> Системы искусственного интеллекта могут генерировать неточные или ошибочные результаты. Точность анализа зависит от качества фотографии, освещения, ракурса и иных факторов, находящихся вне контроля Оператора.</li>
+        <li><strong>Окончательное решение пользователя.</strong> Любое решение о применении методов лечения, удобрений, средств защиты растений, агрохимикатов или иных мер принимается субъектом данных самостоятельно, на собственный страх и риск. Перед применением сильнодействующих средств настоятельно рекомендуется консультация квалифицированного специалиста.</li>
+        <li><strong>Право на человеческое вмешательство.</strong> В соответствии с Art. 22(3) GDPR субъект данных вправе требовать вмешательства человека, выражения собственной точки зрения и оспаривания результата автоматизированной обработки путём обращения к Оператору (§ 2).</li>
+        <li><strong>Ограничение ответственности.</strong> В пределах, допустимых применимым законодательством, Оператор не несёт ответственности за прямой, косвенный, случайный или последующий ущерб, включая, но не ограничиваясь: гибелью или повреждением растений, потерей урожая, упущенной выгодой, расходами на препараты, иными издержками, понесёнными в результате использования или невозможности использования Приложения, а равно следования его рекомендациям.</li>
+        <li><strong>Принятие условий «как есть».</strong> Приложение предоставляется «<em>как есть</em>» (<em>as is</em>) и «по доступности» (<em>as available</em>), без явных или подразумеваемых гарантий точности, пригодности для определённой цели, безошибочной работы или соответствия ожиданиям пользователя.</li>
+      </ol>
+    </article>
+
+    <article class="section" id="ru-14">
+      <h2><span class="num">§ 14</span>Изменения в Политике<a class="anchor" href="#ru-14" aria-label="Постоянная ссылка">#</a></h2>
+      <p>Оператор вправе вносить изменения в настоящую Политику в связи с изменениями в законодательстве, изменением функциональности Приложения или практики обработки данных. Актуальная редакция размещается на настоящей странице с указанием даты вступления в силу и номера версии.</p>
+      <p>Существенные изменения, затрагивающие правовое положение субъекта данных, доводятся до сведения пользователей не менее чем за 30 (тридцать) дней до их вступления в силу посредством уведомлений в Приложении и/или иными доступными средствами.</p>
+    </article>
+
+    <article class="section" id="ru-15">
+      <h2><span class="num">§ 15</span>Применимое право и разрешение споров<a class="anchor" href="#ru-15" aria-label="Постоянная ссылка">#</a></h2>
+      <p>К настоящей Политике применяется законодательство <strong>Республики Таджикистан</strong>, без учёта коллизионных норм. Императивные права субъектов данных, гарантированные GDPR (для резидентов ЕС/ЕЭП) и CCPA (для резидентов Калифорнии), применяются в полном объёме.</p>
+      <p>Споры подлежат разрешению посредством добросовестных переговоров. При недостижении согласия споры разрешаются в компетентных судах Республики Таджикистан, за исключением случаев, когда применимое законодательство о защите прав потребителей предоставляет субъекту данных право на обращение в суд по месту его жительства.</p>
+      <p>Резиденты ЕС/ЕЭП вправе обращаться в надзорный орган государства своего пребывания, работы или предполагаемого нарушения. Резиденты Калифорнии — в Office of the Attorney General of California.</p>
+    </article>
+
+    <article class="section" id="ru-16">
+      <h2><span class="num">§ 16</span>Контактная информация<a class="anchor" href="#ru-16" aria-label="Постоянная ссылка">#</a></h2>
+      <div class="contact-card">
+        <div class="label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Оператор данных
+        </div>
+        <h3>Солиев Носирджон</h3>
+        <div class="row">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a>
+        </div>
+        <div class="who">Республика Таджикистан · Все запросы по защите персональных данных рассматриваются в установленные законом сроки.</div>
+      </div>
+    </article>
   </section>
 
-  <!-- ============ ТОҶИКӢ ============ -->
+  <!-- ============================================================
+                              ТОҶИКӢ
+       ============================================================ -->
   <section class="lang" id="tj">
-    <p class="meta">Санаи нави охирин: 28 апрели соли 2026</p>
 
-    <p>Ҳамин Сиёсати махфият тарзи ҷамъоварӣ, истифода ва ҳифзи маълумоти истифодабарандагонро аз ҷониби барномаи мобилии <strong>Plant Doctor</strong> («Барнома», «мо») баён мекунад. Бо истифода аз Барнома шумо бо шартҳои ин Сиёсат розигӣ дода мешавед.</p>
-
-    <h2>1. Таҳиягар</h2>
-    <p>Барнома аз ҷониби <strong>Сатторов Носирҷон</strong> (шахси воқеӣ, Ҷумҳурии Тоҷикистон) таҳия шудааст.<br>
-    Тамос: <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a></p>
-
-    <h2>2. Кадом маълумотро ҷамъ мекунем</h2>
-
-    <h3>2.1. Маълумоте, ки ба сервери мо мефиристем</h3>
-    <ul>
-      <li><strong>Аксҳои растаниҳо</strong> — вақте ки шумо барги ё растаниро барои ташхис аксбардорӣ мекунед, акс дар формати Base64 ба сервери мо барои таҳлили AI фиристода мешавад.</li>
-      <li><strong>Паёмҳои овозӣ</strong> — вақте ки шумо аз функсияи «Агрономи овозӣ» истифода мебаред, овоз ба сервер барои шинохт ва ҷавоби AI фиристода мешавад.</li>
-      <li><strong>Ҷойгиршавии тахминӣ</strong> — барои функсияи маслиҳатҳои ҳавошиносӣ мо координатаҳои дастгоҳи шуморо дархост мекунем. Координатаҳо танҳо ба хидмати ҳавошиносии open-meteo.com фиристода мешаванд ва дар сервери мо нигоҳ дошта намешаванд.</li>
-    </ul>
-
-    <h3>2.2. Маълумоте, ки ТАНҲО дар дастгоҳи шумо нигоҳ дошта мешавад</h3>
-    <ul>
-      <li>Таърихи ташхисҳо (то 50 сабт)</li>
-      <li>Рӯзномаи растаниҳо (акс, ном, эзоҳҳо, санаҳои обдиҳӣ ва ғизо додан)</li>
-      <li>Танзимоти барнома (забон, фосилаҳои огоҳнома)</li>
-      <li>Идентификаторҳои огоҳномаҳои маҳаллӣ</li>
-    </ul>
-    <p>Ин маълумот дар анбори маҳаллии дастгоҳ (<code>AsyncStorage</code>) нигоҳ дошта мешавад ва <strong>ҳеҷ гоҳ ба серверҳои мо ё шахсони сеюм фиристода намешавад</strong>. Ҳангоми нест кардани барнома онҳо низ нест мегарданд.</p>
-
-    <h3>2.3. Маълумоте, ки мо ҷамъ НАМЕКУНЕМ</h3>
-    <ul>
-      <li>Ном, email, телефон, санаи таваллуд</li>
-      <li>Ҷойгиршавии аниқ ва таърихи ҳаракатҳо</li>
-      <li>Тамосҳо, СМС, занг</li>
-      <li>Идентификаторҳои реклама (Advertising ID)</li>
-      <li>Маълумоти шахсии пардохт (барнома ройгон аст)</li>
-    </ul>
-
-    <h2>3. Чаро мо маълумотро истифода мебарем</h2>
-    <ul>
-      <li><strong>Акс ва овоз</strong> — барои ташхиси AI бемориҳои растаниҳо ва ҷавоб ба саволҳо оид ба нигоҳубин.</li>
-      <li><strong>Ҷойгиршавӣ</strong> — танҳо барои нишон додани ҳавои ҳозира ва тавсияҳои обдиҳӣ.</li>
-      <li>Мо маълумоти шуморо барои реклама, профилбандӣ ё фурӯш ба шахсони сеюм <strong>истифода НАМЕБАРЕМ</strong>.</li>
-    </ul>
-
-    <h2>4. Хидматҳои тарафи сеюм</h2>
-    <p>Барнома хидматҳои зеринро истифода мебарад:</p>
-    <ul>
-      <li><strong>Google Gemini AI</strong> (Google LLC) — барои таҳлили акс ва овоз.<br>
-      Сиёсат: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-      <li><strong>Vercel</strong> (Vercel Inc.) — хостинги API-сервери мо.<br>
-      Сиёсат: <a href="https://vercel.com/legal/privacy-policy" target="_blank">https://vercel.com/legal/privacy-policy</a></li>
-      <li><strong>Open-Meteo</strong> (open-meteo.com) — маълумоти ҳаво, бе авторизатсия.<br>
-      Сиёсат: <a href="https://open-meteo.com/en/terms" target="_blank">https://open-meteo.com/en/terms</a></li>
-      <li><strong>Expo / EAS</strong> (Expo Inc.) — навсозиҳои барнома тариқи ҳаво (OTA).<br>
-      Сиёсат: <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
-    </ul>
-
-    <h2>5. Нигоҳдорӣ ва нест кардани маълумот</h2>
-    <ul>
-      <li>Акс ва овоз тариқи сервери мо <strong>транзит</strong> мегузаранд — мо онҳоро нигоҳ намедорем. Google Gemini метавонад онҳоро муваққатӣ барои коркард мувофиқи сиёсати худ истифода кунад.</li>
-      <li>Маълумоти маҳаллӣ дар дастгоҳи шумо то нест кардани барнома ё тоза кардани дастӣ дар худи барнома (таърих, рӯзнома) нигоҳ дошта мешавад.</li>
-    </ul>
-
-    <h2>6. Иҷозатҳои барнома</h2>
-    <ul>
-      <li><strong>Камера</strong> — барои аксбардории растаниҳо.</li>
-      <li><strong>Галерея / медиа</strong> — барои интихоби акс аз галерея.</li>
-      <li><strong>Микрофон</strong> — барои саволҳои овозӣ.</li>
-      <li><strong>Ҷойгиршавии тахминӣ</strong> — барои маслиҳатҳои ҳавошиносӣ (ихтиёрист).</li>
-      <li><strong>Огоҳномаҳо</strong> — барои ёдоварӣ дар бораи обдиҳӣ ва ғизо додан.</li>
-      <li><strong>Интернет</strong> — барои тамос бо AI-сервер.</li>
-    </ul>
-
-    <h2>7. Кӯдакон</h2>
-    <p>Барнома махсус барои кӯдакони то 13-сола пешбинӣ нашудааст ва бошуурона маълумоти шахсии онҳоро ҷамъ намекунад.</p>
-
-    <h2>8. Тағйирот дар Сиёсат</h2>
-    <p>Мо метавонем ин Сиёсатро навсозӣ кунем. Версияи актуалӣ ҳамеша дар ҳамин саҳифа бо нишондоди санаи навсозии охирин ҷой дода мешавад.</p>
-
-    <h2>9. Ҳуқуқҳои шумо</h2>
-    <p>Шумо метавонед ҳар лаҳза:</p>
-    <ul>
-      <li>Таърихи ташхисҳоро дар танзимоти барнома тоза кунед.</li>
-      <li>Ҳар як растаниро аз рӯзнома нест кунед.</li>
-      <li>Ҷойгиршавӣ ва огоҳномаҳоро дар танзимоти дастгоҳ хомӯш кунед.</li>
-      <li>Барномаро нест кунед — тамоми маълумоти маҳаллӣ нест мегардад.</li>
-    </ul>
-
-    <div class="contact-box">
-      <strong>Тамос оид ба масъалаҳои махфият:</strong><br>
-      📧 <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a><br>
-      Сатторов Носирҷон, Ҷумҳурии Тоҷикистон
+    <div class="preamble">
+      Сиёсати махфияти ҳозира (минбаъд — «<strong>Сиёсат</strong>») коркарди маълумоти шахсии истифодабарандагони барномаи мобилии <strong>Plant Doctor</strong> (минбаъд — «<strong>Барнома</strong>»)-ро танзим менамояд ва дар асоси Низомномаи умумии ИА оид ба ҳифзи маълумоти шахсӣ <span class="legal-ref">Regulation (EU) 2016/679 — GDPR</span>, Қонуни иёлати Калифорнияи ИМА оид ба ҳифзи ҳуқуқҳои истеъмолкунандагон <span class="legal-ref">Cal. Civ. Code §1798.100 — CCPA</span>, Қонуни ИМА оид ба ҳифзи махфияти кӯдакон <span class="legal-ref">15 U.S.C. §6501 — COPPA</span> ва Қонуни Ҷумҳурии Тоҷикистон «Дар бораи ҳифзи маълумоти шахсӣ» аз 03.08.2018 № 1537 таҳия гардидааст. Бо истифода аз Барнома Шумо тасдиқ менамоед, ки бо ин Сиёсат шинос гардидаед ва бо шартҳои коркарди маълумот розӣ ҳастед.
     </div>
+
+    <article class="section" id="tj-1">
+      <h2><span class="num">§ 1</span>Таърифҳо ва соҳаи татбиқ<a class="anchor" href="#tj-1" aria-label="Истиноди доимӣ">#</a></h2>
+      <dl class="defs">
+        <dt>Маълумоти шахсӣ</dt><dd>Ҳама гуна маълумоте, ки ба шахси воқеии шиносоишуда ё шиносоишаванда мансуб аст (Art. 4(1) GDPR).</dd>
+        <dt>Коркард</dt><dd>Ҳама гуна амал ё маҷмӯи амалҳо, ки бо маълумоти шахсӣ анҷом дода мешаванд (Art. 4(2) GDPR).</dd>
+        <dt>Оператори маълумот (Data Controller)</dt><dd>Шахси воқеӣ, ки ҳадафу воситаҳои коркарди маълумотро муайян мекунад (Art. 4(7) GDPR).</dd>
+        <dt>Субъекти маълумот (Data Subject)</dt><dd>Шахси воқеие, ки маълумоти шахсӣ ба ӯ мансуб аст.</dd>
+        <dt>Коркардгар (Processor)</dt><dd>Тарафи сеюме, ки маълумотро аз номи Оператор коркард мекунад.</dd>
+      </dl>
+      <p>Сиёсати ҳозира ба ҳамаи истифодабарандагони Барнома, новобаста аз ҳудуди ҷойгиршавии онҳо, аз ҷумла шаҳрвандон ва сокинони ИА/ҲИА, иёлати Калифорния (ИМА) ва Ҷумҳурии Тоҷикистон, татбиқ мегардад.</p>
+    </article>
+
+    <article class="section" id="tj-2">
+      <h2><span class="num">§ 2</span>Оператори маълумот ва шахси алоқа<a class="anchor" href="#tj-2" aria-label="Истиноди доимӣ">#</a></h2>
+      <p><strong>Оператори маълумот:</strong> Солиев Носирҷон, шахси воқеӣ, Ҷумҳурии Тоҷикистон.</p>
+      <p><strong>Алоқа оид ба маълумоти шахсӣ:</strong> <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a></p>
+      <p>Дархостҳои субъектҳои маълумот дар муҳлатҳои муқарраркардаи қонунгузории татбиқшаванда баррасӣ карда мешаванд: то 30 (сӣ) рӯзи тақвимӣ мувофиқи GDPR (Art. 12(3)); то 45 (чилу панҷ) рӯзи тақвимӣ мувофиқи CCPA бо имкони тамдид.</p>
+    </article>
+
+    <article class="section" id="tj-3">
+      <h2><span class="num">§ 3</span>Категорияҳои маълумоти коркардшаванда<a class="anchor" href="#tj-3" aria-label="Истиноди доимӣ">#</a></h2>
+
+      <h3><span class="sub-num">3.1</span>Маълумоте, ки ба сервери Оператор фиристода мешавад</h3>
+      <ul>
+        <li><strong>Аксҳои растаниҳо</strong> — акси дар формати Base64 рамзгузорӣ шуда, барои мақсадҳои ташхиси AI фиристода мешавад.</li>
+        <li><strong>Сабтҳои овозӣ</strong> — дархостҳои овозӣ барои функсияи «Агрономи овозӣ».</li>
+        <li><strong>Геокоординатаҳои тахминӣ</strong> — барои нишон додани маълумоти ҳавошиносӣ. Координатаҳо ба Open-Meteo фиристода мешаванд ва дар сервери Оператор нигоҳ дошта намешаванд.</li>
+        <li><strong>Идентификатори анонимии дастгоҳ</strong> — UUID v4, ки дар маҳал тавлид мешавад, бе пайвастагӣ бо шахсият, барои ҳисоби насбҳои нодир.</li>
+      </ul>
+
+      <h3><span class="sub-num">3.2</span>Маълумоте, ки маҳаллӣ дар дастгоҳи истифодабаранда нигоҳ дошта мешавад</h3>
+      <ul>
+        <li>Таърихи ташхисҳо (то 50 сабт) — <code>plant_doctor_history</code></li>
+        <li>Рӯзномаи растаниҳо (акс, ном, эзоҳҳо, ҷадвали нигоҳубин) — <code>plant_doctor_plants</code></li>
+        <li>Танзимоти барнома (забон, фосилаҳои огоҳнома)</li>
+        <li>Идентификаторҳои огоҳномаҳои маҳаллӣ</li>
+      </ul>
+      <p>Маълумоти зикршуда дар анбори маҳаллии амни <code>AsyncStorage</code> нигоҳ дошта мешавад ва <strong>ба Оператор, коркардгарони ӯ ё шахсони сеюм фиристода намешавад</strong>. Ҳангоми нест кардани Барнома маълумот низ нест мегардад.</p>
+
+      <h3><span class="sub-num">3.3</span>Категорияҳои маълумоте, ки ҷамъ карда НАМЕШАВАНД</h3>
+      <ul>
+        <li>Ном, насаб, санаи таваллуд, шаҳрвандӣ</li>
+        <li>Адреси электронӣ, рақами телефон, адреси почта</li>
+        <li>Маълумоти аниқи геолокатсионӣ ва таърихи ҳаракатҳо</li>
+        <li>Китобҳои тамос, СМС, журналҳои занг</li>
+        <li>Идентификаторҳои реклама (Advertising ID, IDFA)</li>
+        <li>Маълумоти биометрӣ ва тиббӣ</li>
+        <li>Маълумоти молиявӣ ва пардохтӣ (Барнома ройгон паҳн карда мешавад)</li>
+      </ul>
+    </article>
+
+    <article class="section" id="tj-4">
+      <h2><span class="num">§ 4</span>Ҳадафҳо ва асосҳои ҳуқуқии коркард<a class="anchor" href="#tj-4" aria-label="Истиноди доимӣ">#</a></h2>
+      <p>Коркарди маълумот дар асоси замуни ҳуқуқии зерин амалӣ мегардад <span class="legal-ref">Art. 6(1) GDPR</span>:</p>
+      <ol class="list">
+        <li><strong>Розигии субъекти маълумот</strong> (Art. 6(1)(a)) — барои коркарди аксҳо, сабтҳои овозӣ ва геокоординатаҳо. Розигӣ ба таври ихтиёрӣ тавассути додани иҷозатҳои дахлдор дар системаи амалиётии дастгоҳ дода мешавад.</li>
+        <li><strong>Манфиати қонунии Оператор</strong> (Art. 6(1)(f)) — барои ҳисоби анонимии насбҳои Барнома бо мақсади арзёбии миқёс ва сифати хидмати пешниҳодшаванда. Манфиати зикршуда аз ҳуқуқҳо ва озодиҳои бунёдии субъекти маълумот болотар намебошад.</li>
+        <li><strong>Иҷрои шартнома</strong> (Art. 6(1)(b)) — барои таъмини функсионалии Барнома, ки ҳангоми насби он эълон гардидааст.</li>
+      </ol>
+      <p>Розигиро дар ҳар лаҳза тавассути бекор кардани иҷозатҳои дахлдор дар танзимоти дастгоҳ ё нест кардани Барнома бекор кардан мумкин аст. Бекор кардани розигӣ ба қонунияти коркарди то бекоркунӣ амалишуда таъсир намерасонад.</p>
+    </article>
+
+    <article class="section" id="tj-5">
+      <h2><span class="num">§ 5</span>Ҳуқуқҳои субъектҳои маълумот<a class="anchor" href="#tj-5" aria-label="Истиноди доимӣ">#</a></h2>
+      <p>Субъекти маълумот мувофиқи GDPR (Art. 15–22) ва CCPA (§§ 1798.100–1798.135) ҳуқуқҳои зеринро дорост:</p>
+      <ul>
+        <li><strong>Ҳуқуқи дастрасӣ</strong> (Art. 15 GDPR; CCPA § 1798.100) — гирифтани маълумот дар бораи ҳолати коркард ва нусхаи маълумот.</li>
+        <li><strong>Ҳуқуқи ислоҳ</strong> (Art. 16 GDPR) — талаби ислоҳи маълумоти нодуруст.</li>
+        <li><strong>Ҳуқуқи нест кардан / «ҳуқуқи фаромӯш кардан»</strong> (Art. 17 GDPR; CCPA § 1798.105) — талаби нест кардани маълумот.</li>
+        <li><strong>Ҳуқуқи маҳдуд кардани коркард</strong> (Art. 18 GDPR).</li>
+        <li><strong>Ҳуқуқи интиқолпазирии маълумот</strong> (Art. 20 GDPR).</li>
+        <li><strong>Ҳуқуқи эътироз</strong> (Art. 21 GDPR; CCPA § 1798.120 — ҳуқуқи рад кардани фурӯш).</li>
+        <li><strong>Ҳуқуқи мавриди қарорҳои худкор қарор нагирифтан</strong> (Art. 22 GDPR) — ниг. § 13 ҳамин Сиёсат.</li>
+        <li><strong>Ҳуқуқи беайбкунӣ</strong> (CCPA § 1798.125) — барои амалӣ кардани ҳуқуқҳо сифати хидмат паст карда намешавад.</li>
+        <li><strong>Ҳуқуқи шикоят ба мақоми назоратӣ</strong> (Art. 77 GDPR) — дар давлати ҷойгиршавӣ, кор ё ҳуқуқвайронкунии тахминии Шумо.</li>
+      </ul>
+      <p>Дархост ба адреси Оператор фиристода мешавад (ниг. § 2). Ҷавоб дар муҳлати 30 рӯз мутобиқи GDPR; 45 рӯз мутобиқи CCPA пешниҳод мегардад. Ҳангоми рад шудани дархост асоси ҳуқуқӣ ифода карда мешавад.</p>
+    </article>
+
+    <article class="section" id="tj-6">
+      <h2><span class="num">§ 6</span>Гирандагони маълумот ва зеркоркардгарон<a class="anchor" href="#tj-6" aria-label="Истиноди доимӣ">#</a></h2>
+      <p>Оператор зеркоркардгарони зеринро ҷалб менамояд, ки дар асоси ӯҳдадориҳои шартномавӣ оид ба ҳифзи маълумот амал мекунанд <span class="legal-ref">Art. 28 GDPR</span>:</p>
+      <ul>
+        <li><strong>Google LLC</strong> (Mountain View, CA, ИМА) — коркарди акс ва овоз тавассути Gemini API.<br>Сиёсат: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li><strong>Vercel Inc.</strong> (Walnut, CA, ИМА) — хостинги API-сервери Оператор.<br>Сиёсат: <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">vercel.com/legal/privacy-policy</a></li>
+        <li><strong>Upstash Inc.</strong> (Wilmington, DE, ИМА) — анбори Redis барои ҳисоби анонимии насбҳо.<br>Сиёсат: <a href="https://upstash.com/trust/privacy.pdf" target="_blank" rel="noopener">upstash.com/trust/privacy</a></li>
+        <li><strong>Open-Meteo</strong> — таъминкунандаи маълумоти ҳавошиносӣ, бе авторизатсия.<br>Сиёсат: <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">open-meteo.com/en/terms</a></li>
+        <li><strong>Expo Inc.</strong> (Palo Alto, CA, ИМА) — расонидани навсозиҳои Барнома тариқи технологияи Over-The-Air (EAS Update).<br>Сиёсат: <a href="https://expo.dev/privacy" target="_blank" rel="noopener">expo.dev/privacy</a></li>
+      </ul>
+      <p>Оператор фурӯши маълумоти шахсиро дар маънои CCPA § 1798.140(t) амалӣ намекунад. Интиқоли маълумот ба тарафҳои сеюм бо мақсадҳои реклама ё маркетингӣ <strong>истисно карда мешавад</strong>.</p>
+    </article>
+
+    <article class="section" id="tj-7">
+      <h2><span class="num">§ 7</span>Интиқоли фаромарзии маълумот<a class="anchor" href="#tj-7" aria-label="Истиноди доимӣ">#</a></h2>
+      <p>Азбаски зеркоркардгарони дар § 6 номбаршуда дар Иёлоти Муттаҳидаи Амрико ҷойгиранд, коркарди маълумот метавонад интиқоли фаромарзиро берун аз минтақаи иқтисодии Аврупо (МИА) ва Ҷумҳурии Тоҷикистон дар бар гирад.</p>
+      <p>Интиқол дар асоси замуни ҳуқуқии зерин амалӣ мегардад <span class="legal-ref">Art. 44–49 GDPR</span>:</p>
+      <ul>
+        <li>Муқаррароти стандартии шартномавии Комиссияи Аврупо (<strong>Standard Contractual Clauses</strong>), ки бо Қарори (ИА) 2021/914 аз 04.06.2021 тасдиқ шудаанд — барои интиқолҳои Google, Vercel, Expo ва Upstash.</li>
+        <li>Чораҳои иловагии техникӣ ва ташкилӣ (рамзгузорӣ ҳангоми интиқол, маҳдуд кардани дастрасӣ, тартиби нигоҳдорӣ), ки дар доираи Transfer Impact Assessment (Schrems II) арзёбӣ мешаванд.</li>
+      </ul>
+      <p>Нусхаи SCC-и татбиқшаванда ва арзёбии таъсири интиқолро аз Оператор дархост кардан мумкин аст.</p>
+    </article>
+
+    <article class="section" id="tj-8">
+      <h2><span class="num">§ 8</span>Муҳлатҳои нигоҳдорӣ ва нест кардани маълумот<a class="anchor" href="#tj-8" aria-label="Истиноди доимӣ">#</a></h2>
+      <ul>
+        <li><strong>Аксҳо ва сабтҳои овозӣ</strong> тавассути API-сервери Оператор <em>транзит</em> мегузаранд ва нигоҳ дошта намешаванд. Google Gemini метавонад онҳоро муваққатан барои коркард мутобиқи сиёсати худ истифода кунад ва мутобиқи муҳлатҳои худ нест намояд.</li>
+        <li><strong>Идентификатори анонимии дастгоҳ</strong> дар Upstash Redis дар тӯли тамоми мӯҳлати истифодаи Барнома нигоҳ дошта мешавад ва бо дархости субъекти маълумот дар муддати 30 рӯз нест мегардад.</li>
+        <li><strong>Маълумоти маҳаллӣ</strong> (таърих, рӯзнома, танзимот) дар дастгоҳи истифодабаранда то нест кардани Барнома ё тоза кардани дастӣ дар худи Барнома нигоҳ дошта мешавад.</li>
+      </ul>
+      <p>Пас аз гузаштани муҳлати нигоҳдорӣ маълумот мутобиқи принсипи маҳдудияти нигоҳдорӣ <span class="legal-ref">Art. 5(1)(e) GDPR</span> ба таври бебозгашт нест ё анонимӣ мешавад.</p>
+    </article>
+
+    <article class="section" id="tj-9">
+      <h2><span class="num">§ 9</span>Чораҳои амният<a class="anchor" href="#tj-9" aria-label="Истиноди доимӣ">#</a></h2>
+      <p>Бо мақсади иҷрои талаботи <span class="legal-ref">Art. 32 GDPR</span> Оператор чораҳои техникӣ ва ташкилии зеринро татбиқ менамояд:</p>
+      <ul>
+        <li>Рамзгузории нақлиётии TLS 1.2+ ҳангоми ҳамаи пайвастагиҳои шабакавӣ (HTTPS).</li>
+        <li>Нигоҳдории калидҳои API-и хидматҳои сеюм дар сервер, ки рахнаи онҳоро тавассути декомпилятсияи мизоҷи мобилӣ истисно мекунад.</li>
+        <li>Кам кардани маълумоти ҷамъовардашаванда мутобиқи принсипи <em>data minimisation</em> (Art. 5(1)(c) GDPR).</li>
+        <li>Истифодаи провайдерҳои абрӣ бо сертификатсияи ISO/IEC 27001 ва SOC 2 Type II.</li>
+        <li>Аудити мунтазами вобастагиҳои нармафзор барои осебпазириҳо.</li>
+      </ul>
+    </article>
+
+    <article class="section" id="tj-10">
+      <h2><span class="num">§ 10</span>Cookies ва анбори маҳаллӣ<a class="anchor" href="#tj-10" aria-label="Истиноди доимӣ">#</a></h2>
+      <p>Барнома барномаи мобилии нативӣ мебошад ва <strong>HTTP cookies истифода намебарад</strong>. Анбори маҳаллии <code>AsyncStorage</code> танҳо барои ҳадафҳои функсионалӣ (таърихи ташхис, танзимот) истифода мешавад ва ба низомгузории ePrivacy Directive 2002/58/EC дар қисмати талаби розигӣ оид ба cookies дохил намегардад.</p>
+    </article>
+
+    <article class="section" id="tj-11">
+      <h2><span class="num">§ 11</span>Ҳифзи маълумоти шахсии кӯдакон<a class="anchor" href="#tj-11" aria-label="Истиноди доимӣ">#</a></h2>
+      <p>Барнома <strong>барои шахсони то 13-сола пешбинӣ нашудааст</strong> мутобиқи <span class="legal-ref">15 U.S.C. § 6501 — COPPA</span> ва <span class="legal-ref">Art. 8 GDPR</span> (барои давлат-аъзоёни ИА, ки ҳудуди синнусолиро то 16 баланд мекунанд, синнусоли мувофиқи миллӣ татбиқ мегардад).</p>
+      <p>Оператор ҷамъоварии бошуурои маълумоти шахсии кӯдаконро амалӣ намекунад. Дар ҳолати ошкор шудани коркарди маълумоти шахси ба синнусоли татбиқшаванда нарасида, Оператор фавран коркардро қатъ ва маълумоти дахлдорро нест мекунад.</p>
+    </article>
+
+    <article class="section" id="tj-12">
+      <h2><span class="num">§ 12</span>Огоҳномаи вайроншавии амният<a class="anchor" href="#tj-12" aria-label="Истиноди доимӣ">#</a></h2>
+      <p>Ҳангоми ошкор шудани ҳодисае, ки боиси вайроншавии ҳифзи маълумоти шахсӣ гардидааст ё гардида метавонад, Оператор огоҳ менамояд:</p>
+      <ul>
+        <li>Мақоми <strong>назоратии</strong> дахлдорро дар муддати <strong>72 соат</strong> аз лаҳзаи ошкоршавии вайронкунӣ <span class="legal-ref">Art. 33 GDPR</span>.</li>
+        <li><strong>Субъектҳои маълумотро</strong> — бе таъхири беасос, агар вайронкунӣ хатари баланд барои ҳуқуқҳо ва озодиҳои онҳо пешниҳод намояд <span class="legal-ref">Art. 34 GDPR</span>.</li>
+      </ul>
+    </article>
+
+    <article class="section" id="tj-13">
+      <h2><span class="num">§ 13</span>Қарорҳои худкор ва AI<a class="anchor" href="#tj-13" aria-label="Истиноди доимӣ">#</a></h2>
+      <div class="notice">
+        <span class="label">⚠ Шарти муҳим</span>
+        Plant Doctor системаҳои зеҳни сунъиро (Google Gemini ва алгоритмҳои омӯзиши мошинӣ) барои тавлиди хулосаҳои ташхисӣ ва тавсияҳо истифода мебарад. Ин равандҳо <strong>коркарди худкор</strong> дар маънои <span class="legal-ref">Art. 22 GDPR</span> мебошанд, аммо <strong>оқибатҳои ҳуқуқӣ</strong> нисбат ба субъекти маълумот ба миён намеоранд ва ба ӯ таъсири моҳиятан монандро надоранд.
+      </div>
+      <ol class="list">
+        <li><strong>Хусусияти иттилоотӣ-маслиҳатӣ.</strong> Натиҷаҳо, ки Барнома пешниҳод мекунад, танҳо хусусияти иттилоотӣ-тавсиявӣ доранд ва <strong>хулосаи</strong> агрономи касбӣ, фитопатолог, муҳандиси соҳаи кишоварзӣ ё дигар мутахассиси соҳибихтисосро <strong>иваз намекунанд</strong>.</li>
+        <li><strong>Эҳтимоли хатоҳои AI.</strong> Системаҳои зеҳни сунъӣ метавонанд натиҷаҳои нодуруст тавлид кунанд. Дақиқии таҳлил аз сифати акс, равшанӣ, кунҷ ва дигар омилҳо вобаста аст.</li>
+        <li><strong>Қарори ниҳоии истифодабаранда.</strong> Ҳама гуна қарор оид ба истифодаи усулҳои табобат, нурӣ, воситаҳои муҳофизати растаниҳо, агрохимикатҳо ё дигар чораҳоро субъекти маълумот мустақилона, бо хатари худ мегирад.</li>
+        <li><strong>Ҳуқуқи дахолати инсон.</strong> Мутобиқи Art. 22(3) GDPR субъекти маълумот ҳуқуқ дорад дахолати инсонро талаб кунад, нуқтаи назари худро баён намояд ва натиҷаи коркарди худкорро ба эътироз кашад тавассути муроҷиат ба Оператор (§ 2).</li>
+        <li><strong>Маҳдудияти ҷавобгарӣ.</strong> Дар доираи қонунгузории татбиқшаванда Оператор барои зарари мустақим, ғайримустақим, тасодуфӣ ё пайомадии аз ҷумла, вале на маҳдуд бо: марг ё осеби растаниҳо, талаф шудани ҳосил, фоидаи аз даст рафта, харҷи дорувориҳо ҷавобгар нест.</li>
+        <li><strong>Қабули шартҳои «ҳамон тавре, ки ҳаст».</strong> Барнома «<em>ҳамон тавре, ки ҳаст</em>» (<em>as is</em>) ва «бо имконият» (<em>as available</em>) пешниҳод мегардад, бидуни кафолатҳои ошкор ё пинҳон.</li>
+      </ol>
+    </article>
+
+    <article class="section" id="tj-14">
+      <h2><span class="num">§ 14</span>Тағйирот дар Сиёсат<a class="anchor" href="#tj-14" aria-label="Истиноди доимӣ">#</a></h2>
+      <p>Оператор ҳуқуқ дорад ба Сиёсати ҳозира тағйирот ворид намояд бо сабаби тағйирот дар қонунгузорӣ, тағйири функсионалии Барнома ё амалияи коркарди маълумот. Версияи актуалӣ дар ҳамин саҳифа бо нишондоди санаи эътибор ёфтан ва рақами версия ҷой дода мешавад.</p>
+      <p>Тағйироти муҳим, ки ҳолати ҳуқуқии субъекти маълумотро дахл мекунад, на камтар аз 30 (сӣ) рӯз пеш аз эътибор ёфтани онҳо тавассути огоҳномаҳо дар Барнома ва/ё бо роҳҳои дигари дастрас ба истифодабарандагон расонида мешавад.</p>
+    </article>
+
+    <article class="section" id="tj-15">
+      <h2><span class="num">§ 15</span>Қонунгузории татбиқшаванда ва ҳалли баҳсҳо<a class="anchor" href="#tj-15" aria-label="Истиноди доимӣ">#</a></h2>
+      <p>Ба Сиёсати ҳозира қонунгузории <strong>Ҷумҳурии Тоҷикистон</strong> бидуни ба назар гирифтани меъёрҳои коллизионӣ татбиқ мегардад. Ҳуқуқҳои императивии субъектҳои маълумот, ки тавассути GDPR (барои сокинони ИА/ҲИА) ва CCPA (барои сокинони Калифорния) кафолат дода шудаанд, дар ҳаҷми пурра татбиқ мешаванд.</p>
+      <p>Баҳсҳо тавассути музокирот ҳалли худро меёбанд. Дар сурати ба тавофуқ нарасидан, баҳсҳо дар судҳои салоҳиятдори Ҷумҳурии Тоҷикистон ҳал карда мешаванд, ба истиснои ҳолатҳое, ки қонунгузории татбиқшавандаи ҳифзи ҳуқуқҳои истеъмолкунандагон ба субъекти маълумот ҳуқуки муроҷиат ба суди маҳалли зисти худро медиҳад.</p>
+      <p>Сокинони ИА/ҲИА ҳуқуқ доранд ба мақоми назоратии давлати ҷойгиршавӣ, кор ё ҳуқуқвайронкунии тахминии худ муроҷиат намоянд. Сокинони Калифорния — ба Office of the Attorney General of California.</p>
+    </article>
+
+    <article class="section" id="tj-16">
+      <h2><span class="num">§ 16</span>Маълумоти алоқа<a class="anchor" href="#tj-16" aria-label="Истиноди доимӣ">#</a></h2>
+      <div class="contact-card">
+        <div class="label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Оператори маълумот
+        </div>
+        <h3>Солиев Носирҷон</h3>
+        <div class="row">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a>
+        </div>
+        <div class="who">Ҷумҳурии Тоҷикистон · Ҳамаи дархостҳо оид ба ҳифзи маълумоти шахсӣ дар муҳлатҳои қонунгузорӣ муқарраршуда баррасӣ карда мешаванд.</div>
+      </div>
+    </article>
   </section>
 
-  <!-- ============ ENGLISH ============ -->
+  <!-- ============================================================
+                              ENGLISH
+       ============================================================ -->
   <section class="lang" id="en">
-    <p class="meta">Last updated: April 28, 2026</p>
 
-    <p>This Privacy Policy describes how the <strong>Plant Doctor</strong> mobile application ("App", "we", "us") collects, uses, and protects user information. By using the App, you agree to the terms of this Policy.</p>
-
-    <h2>1. Developer</h2>
-    <p>The App is developed by <strong>Nosirjon Sattorov</strong> (individual, Republic of Tajikistan).<br>
-    Contact: <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a></p>
-
-    <h2>2. What Data We Collect</h2>
-
-    <h3>2.1. Data sent to our server</h3>
-    <ul>
-      <li><strong>Plant photos</strong> — when you photograph a leaf or plant for diagnosis, the photo is sent to our server in Base64 format for AI analysis.</li>
-      <li><strong>Voice messages</strong> — when you use the "Voice Agronomist" feature, audio is sent to our server for recognition and AI response.</li>
-      <li><strong>Approximate location</strong> — for the weather hint feature, we request your device's coordinates. Coordinates are sent only to the open-meteo.com weather service and are not stored on our server.</li>
-    </ul>
-
-    <h3>2.2. Data stored ONLY on your device</h3>
-    <ul>
-      <li>Diagnosis history (up to 50 entries)</li>
-      <li>Plant journal (photos, names, notes, watering and fertilizing dates)</li>
-      <li>App settings (language, reminder intervals)</li>
-      <li>Local notification IDs</li>
-    </ul>
-    <p>This data is stored in the device's local storage (<code>AsyncStorage</code>) and is <strong>never transmitted to our servers or third parties</strong>. When you uninstall the app, this data is also removed.</p>
-
-    <h3>2.3. Data we DO NOT collect</h3>
-    <ul>
-      <li>Name, email, phone, date of birth</li>
-      <li>Precise location or movement history</li>
-      <li>Contacts, SMS, calls</li>
-      <li>Advertising IDs</li>
-      <li>Payment information (the app is free)</li>
-    </ul>
-
-    <h2>3. How We Use the Data</h2>
-    <ul>
-      <li><strong>Photos and audio</strong> — for AI diagnosis of plant diseases and answering plant care questions.</li>
-      <li><strong>Location</strong> — only to display current weather and watering recommendations.</li>
-      <li>We <strong>do not</strong> use your data for advertising, profiling, or selling to third parties.</li>
-    </ul>
-
-    <h2>4. Third-Party Services</h2>
-    <p>The App uses the following third-party services:</p>
-    <ul>
-      <li><strong>Google Gemini AI</strong> (Google LLC) — for photo and audio analysis.<br>
-      Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-      <li><strong>Vercel</strong> (Vercel Inc.) — hosting our server API.<br>
-      Policy: <a href="https://vercel.com/legal/privacy-policy" target="_blank">https://vercel.com/legal/privacy-policy</a></li>
-      <li><strong>Open-Meteo</strong> (open-meteo.com) — weather data, no authentication required.<br>
-      Policy: <a href="https://open-meteo.com/en/terms" target="_blank">https://open-meteo.com/en/terms</a></li>
-      <li><strong>Expo / EAS</strong> (Expo Inc.) — over-the-air app updates (OTA).<br>
-      Policy: <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
-    </ul>
-
-    <h2>5. Data Storage and Deletion</h2>
-    <ul>
-      <li>Photos and audio pass through our server in <strong>transit</strong> — we do not store them. Google Gemini may temporarily use them for processing per its own policy.</li>
-      <li>Local data remains on your device until you uninstall the app or manually clear it within the app (history, journal).</li>
-    </ul>
-
-    <h2>6. App Permissions</h2>
-    <ul>
-      <li><strong>Camera</strong> — to photograph plants.</li>
-      <li><strong>Gallery / media</strong> — to pick photos from your gallery.</li>
-      <li><strong>Microphone</strong> — for voice questions.</li>
-      <li><strong>Approximate location</strong> — for weather hints (optional, can be denied).</li>
-      <li><strong>Notifications</strong> — for watering and fertilizing reminders.</li>
-      <li><strong>Internet</strong> — to connect to the AI server.</li>
-    </ul>
-
-    <h2>7. Children</h2>
-    <p>The App is not specifically intended for children under 13 and does not knowingly collect their personal data.</p>
-
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this Policy. The current version is always published on this page with the date of the last update.</p>
-
-    <h2>9. Your Rights</h2>
-    <p>You can at any time:</p>
-    <ul>
-      <li>Clear the diagnosis history in the app settings.</li>
-      <li>Delete any plant from the journal.</li>
-      <li>Disable location and notifications in your device settings.</li>
-      <li>Uninstall the app — all local data will be erased.</li>
-    </ul>
-
-    <div class="contact-box">
-      <strong>Privacy contact:</strong><br>
-      📧 <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a><br>
-      Nosirjon Sattorov, Republic of Tajikistan
+    <div class="preamble">
+      This Privacy Policy (the "<strong>Policy</strong>") governs the processing of personal data of users of the <strong>Plant Doctor</strong> mobile application (the "<strong>App</strong>") and is drafted in accordance with the EU General Data Protection Regulation <span class="legal-ref">Regulation (EU) 2016/679 — GDPR</span>, the California Consumer Privacy Act <span class="legal-ref">Cal. Civ. Code §1798.100 — CCPA</span>, the U.S. Children's Online Privacy Protection Act <span class="legal-ref">15 U.S.C. §6501 — COPPA</span>, and the Law of the Republic of Tajikistan "On Personal Data Protection" of 03.08.2018 No. 1537. By using the App, you confirm that you have read this Policy and consent to the processing terms set forth herein.
     </div>
+
+    <article class="section" id="en-1">
+      <h2><span class="num">§ 1</span>Definitions and Scope<a class="anchor" href="#en-1" aria-label="Permanent link">#</a></h2>
+      <dl class="defs">
+        <dt>Personal Data</dt><dd>Any information relating to an identified or identifiable natural person (Art. 4(1) GDPR).</dd>
+        <dt>Processing</dt><dd>Any operation or set of operations performed on personal data (Art. 4(2) GDPR).</dd>
+        <dt>Data Controller</dt><dd>The natural person who determines the purposes and means of the processing (Art. 4(7) GDPR).</dd>
+        <dt>Data Subject</dt><dd>The natural person to whom the personal data relates.</dd>
+        <dt>Processor</dt><dd>A third party that processes personal data on behalf of the Controller.</dd>
+      </dl>
+      <p>This Policy applies to all users of the App regardless of their territory of residence, including, in particular, citizens and residents of the EU/EEA, the State of California (USA), and the Republic of Tajikistan.</p>
+    </article>
+
+    <article class="section" id="en-2">
+      <h2><span class="num">§ 2</span>Data Controller and Contact<a class="anchor" href="#en-2" aria-label="Permanent link">#</a></h2>
+      <p><strong>Data Controller:</strong> Nosirjon Soliev, natural person, Republic of Tajikistan.</p>
+      <p><strong>Privacy contact:</strong> <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a></p>
+      <p>Data subject requests are processed within the time limits set by applicable law: up to 30 (thirty) calendar days under GDPR (Art. 12(3)); up to 45 (forty-five) calendar days under CCPA, with the possibility of extension.</p>
+    </article>
+
+    <article class="section" id="en-3">
+      <h2><span class="num">§ 3</span>Categories of Data Processed<a class="anchor" href="#en-3" aria-label="Permanent link">#</a></h2>
+
+      <h3><span class="sub-num">3.1</span>Data transmitted to the Controller's server</h3>
+      <ul>
+        <li><strong>Plant photographs</strong> — Base64-encoded images transmitted for AI diagnostic purposes.</li>
+        <li><strong>Audio recordings</strong> — voice queries for the "Voice Agronomist" feature.</li>
+        <li><strong>Approximate geolocation</strong> — for displaying meteorological data. Coordinates are sent to Open-Meteo and not stored by the Controller.</li>
+        <li><strong>Anonymous device identifier</strong> — UUID v4 generated locally, not linked to identity, used to count unique installations.</li>
+      </ul>
+
+      <h3><span class="sub-num">3.2</span>Data stored locally on the user's device</h3>
+      <ul>
+        <li>Diagnosis history (up to 50 records) — <code>plant_doctor_history</code></li>
+        <li>Plant journal (photos, names, notes, care schedule) — <code>plant_doctor_plants</code></li>
+        <li>App settings (language, reminder intervals)</li>
+        <li>Local push notification identifiers</li>
+      </ul>
+      <p>Such data is stored in the secure local <code>AsyncStorage</code> and <strong>is not transmitted to the Controller, its processors, or third parties</strong>. Upon uninstallation of the App, the data is destroyed together with it.</p>
+
+      <h3><span class="sub-num">3.3</span>Categories of data NOT collected</h3>
+      <ul>
+        <li>Name, surname, date of birth, citizenship</li>
+        <li>Email address, telephone number, postal address</li>
+        <li>Precise geolocation data and movement history</li>
+        <li>Contact lists, SMS, call logs</li>
+        <li>Advertising identifiers (Advertising ID, IDFA)</li>
+        <li>Biometric or health-related data</li>
+        <li>Financial or payment data (the App is distributed free of charge)</li>
+      </ul>
+    </article>
+
+    <article class="section" id="en-4">
+      <h2><span class="num">§ 4</span>Purposes and Legal Bases of Processing<a class="anchor" href="#en-4" aria-label="Permanent link">#</a></h2>
+      <p>Data processing is carried out on the following legal bases <span class="legal-ref">Art. 6(1) GDPR</span>:</p>
+      <ol class="list">
+        <li><strong>Data subject's consent</strong> (Art. 6(1)(a)) — for processing photographs, audio recordings, and geolocation. Consent is provided voluntarily through granting the corresponding permissions in the device's operating system.</li>
+        <li><strong>Controller's legitimate interest</strong> (Art. 6(1)(f)) — for anonymous counting of App installations to assess the scope and quality of the service provided. This interest does not override the fundamental rights and freedoms of the data subject.</li>
+        <li><strong>Performance of a contract</strong> (Art. 6(1)(b)) — for providing the App's functionality declared at installation.</li>
+      </ol>
+      <p>Consent may be withdrawn at any time by revoking the corresponding permissions in device settings or by uninstalling the App. Withdrawal of consent does not affect the lawfulness of processing carried out before the withdrawal.</p>
+    </article>
+
+    <article class="section" id="en-5">
+      <h2><span class="num">§ 5</span>Rights of Data Subjects<a class="anchor" href="#en-5" aria-label="Permanent link">#</a></h2>
+      <p>Data subjects have the following rights under GDPR (Art. 15–22) and CCPA (§§ 1798.100–1798.135):</p>
+      <ul>
+        <li><strong>Right of access</strong> (Art. 15 GDPR; CCPA § 1798.100) — to obtain confirmation of processing and a copy of the data.</li>
+        <li><strong>Right to rectification</strong> (Art. 16 GDPR) — to require correction of inaccurate data.</li>
+        <li><strong>Right to erasure / "right to be forgotten"</strong> (Art. 17 GDPR; CCPA § 1798.105) — to require deletion of data.</li>
+        <li><strong>Right to restriction of processing</strong> (Art. 18 GDPR).</li>
+        <li><strong>Right to data portability</strong> (Art. 20 GDPR).</li>
+        <li><strong>Right to object</strong> (Art. 21 GDPR; CCPA § 1798.120 — right to opt out of sale).</li>
+        <li><strong>Right not to be subject to automated decision-making</strong> (Art. 22 GDPR) — see § 13 of this Policy.</li>
+        <li><strong>Right to non-discrimination</strong> (CCPA § 1798.125) — exercising your rights does not result in degradation of service.</li>
+        <li><strong>Right to lodge a complaint with a supervisory authority</strong> (Art. 77 GDPR) — in the Member State of your residence, place of work, or alleged infringement.</li>
+      </ul>
+      <p>Requests are sent to the Controller's address (see § 2). A response is provided within 30 days under GDPR; 45 days under CCPA. If a request is denied, the legal basis is provided.</p>
+    </article>
+
+    <article class="section" id="en-6">
+      <h2><span class="num">§ 6</span>Recipients and Sub-processors<a class="anchor" href="#en-6" aria-label="Permanent link">#</a></h2>
+      <p>The Controller engages the following sub-processors, acting under contractual data protection obligations <span class="legal-ref">Art. 28 GDPR</span>:</p>
+      <ul>
+        <li><strong>Google LLC</strong> (Mountain View, CA, USA) — image and audio processing via Gemini API.<br>Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li><strong>Vercel Inc.</strong> (Walnut, CA, USA) — hosting of the server-side API.<br>Policy: <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">vercel.com/legal/privacy-policy</a></li>
+        <li><strong>Upstash Inc.</strong> (Wilmington, DE, USA) — Redis storage for anonymous install counting.<br>Policy: <a href="https://upstash.com/trust/privacy.pdf" target="_blank" rel="noopener">upstash.com/trust/privacy</a></li>
+        <li><strong>Open-Meteo</strong> — meteorological data provider, no authentication required.<br>Policy: <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">open-meteo.com/en/terms</a></li>
+        <li><strong>Expo Inc.</strong> (Palo Alto, CA, USA) — Over-The-Air delivery of App updates (EAS Update).<br>Policy: <a href="https://expo.dev/privacy" target="_blank" rel="noopener">expo.dev/privacy</a></li>
+      </ul>
+      <p>The Controller does not sell personal data within the meaning of CCPA § 1798.140(t). Transfer of data to third parties for advertising or marketing purposes is <strong>excluded</strong>.</p>
+    </article>
+
+    <article class="section" id="en-7">
+      <h2><span class="num">§ 7</span>International Data Transfers<a class="anchor" href="#en-7" aria-label="Permanent link">#</a></h2>
+      <p>As the sub-processors listed in § 6 are located in the United States of America, processing may involve cross-border transfer outside the European Economic Area (EEA) and the Republic of Tajikistan.</p>
+      <p>Such transfer is carried out on the following legal bases <span class="legal-ref">Art. 44–49 GDPR</span>:</p>
+      <ul>
+        <li>European Commission Standard Contractual Clauses (<strong>SCCs</strong>) approved by Decision (EU) 2021/914 of 04.06.2021 — for transfers to Google, Vercel, Expo, and Upstash.</li>
+        <li>Supplementary technical and organisational measures (in-transit encryption, access restrictions, retention regime), assessed within the framework of a Transfer Impact Assessment (Schrems II).</li>
+      </ul>
+      <p>Copies of applicable SCCs and the Transfer Impact Assessment may be requested from the Controller.</p>
+    </article>
+
+    <article class="section" id="en-8">
+      <h2><span class="num">§ 8</span>Retention Periods and Erasure<a class="anchor" href="#en-8" aria-label="Permanent link">#</a></h2>
+      <ul>
+        <li><strong>Photographs and audio recordings</strong> pass through the Controller's server-side API <em>in transit</em> and are not stored. Google Gemini may temporarily use them for processing in accordance with its own policy and erases them per its retention terms.</li>
+        <li><strong>Anonymous device identifier</strong> is stored in Upstash Redis for the duration of App use and is erased upon data subject request within 30 days.</li>
+        <li><strong>Local data</strong> (history, journal, settings) is retained on the user's device until uninstallation of the App or manual clearing within the App.</li>
+      </ul>
+      <p>Upon expiry of the retention period, data is irreversibly erased or anonymised in accordance with the storage limitation principle <span class="legal-ref">Art. 5(1)(e) GDPR</span>.</p>
+    </article>
+
+    <article class="section" id="en-9">
+      <h2><span class="num">§ 9</span>Security Measures<a class="anchor" href="#en-9" aria-label="Permanent link">#</a></h2>
+      <p>To comply with <span class="legal-ref">Art. 32 GDPR</span>, the Controller implements the following technical and organisational measures:</p>
+      <ul>
+        <li>TLS 1.2+ transport encryption for all network connections (HTTPS).</li>
+        <li>Storage of third-party API keys server-side, preventing leakage via mobile client decompilation.</li>
+        <li>Minimisation of collected data per the <em>data minimisation</em> principle (Art. 5(1)(c) GDPR).</li>
+        <li>Use of cloud providers certified to ISO/IEC 27001 and SOC 2 Type II.</li>
+        <li>Regular auditing of software dependencies for vulnerabilities.</li>
+      </ul>
+    </article>
+
+    <article class="section" id="en-10">
+      <h2><span class="num">§ 10</span>Cookies and Local Storage<a class="anchor" href="#en-10" aria-label="Permanent link">#</a></h2>
+      <p>The App is a native mobile application and <strong>does not use HTTP cookies</strong>. The local <code>AsyncStorage</code> is used solely for functional purposes (diagnosis history, settings) and is not subject to the consent requirement under ePrivacy Directive 2002/58/EC.</p>
+    </article>
+
+    <article class="section" id="en-11">
+      <h2><span class="num">§ 11</span>Children's Privacy<a class="anchor" href="#en-11" aria-label="Permanent link">#</a></h2>
+      <p>The App is <strong>not intended for persons under 13 years of age</strong> in accordance with <span class="legal-ref">15 U.S.C. § 6501 — COPPA</span> and <span class="legal-ref">Art. 8 GDPR</span> (for EU Member States raising the age threshold to 16, the corresponding national age of consent applies).</p>
+      <p>The Controller does not knowingly collect personal data of children. If processing of data of a person below the applicable age threshold is detected, the Controller immediately ceases processing and erases the relevant data.</p>
+    </article>
+
+    <article class="section" id="en-12">
+      <h2><span class="num">§ 12</span>Data Breach Notification<a class="anchor" href="#en-12" aria-label="Permanent link">#</a></h2>
+      <p>Upon detection of an incident that has caused or may cause a personal data breach, the Controller shall notify:</p>
+      <ul>
+        <li>The relevant <strong>supervisory authority</strong> within <strong>72 hours</strong> of becoming aware of the breach <span class="legal-ref">Art. 33 GDPR</span>.</li>
+        <li><strong>Data subjects</strong> — without undue delay where the breach is likely to result in a high risk to their rights and freedoms <span class="legal-ref">Art. 34 GDPR</span>.</li>
+      </ul>
+    </article>
+
+    <article class="section" id="en-13">
+      <h2><span class="num">§ 13</span>Automated Decision-Making and AI<a class="anchor" href="#en-13" aria-label="Permanent link">#</a></h2>
+      <div class="notice">
+        <span class="label">⚠ Material clause</span>
+        Plant Doctor uses artificial intelligence systems (Google Gemini and machine learning algorithms) to generate diagnostic conclusions and recommendations. These processes constitute <strong>automated processing</strong> within the meaning of <span class="legal-ref">Art. 22 GDPR</span>; however, they <strong>do not produce legal effects</strong> on the data subject and do not similarly significantly affect them.
+      </div>
+      <ol class="list">
+        <li><strong>Informational and advisory nature.</strong> The results provided by the App are informational and advisory only and <strong>do not constitute</strong> the opinion of a professional agronomist, plant pathologist, agricultural engineer, or any other certified specialist, and do not substitute such consultation.</li>
+        <li><strong>Possibility of AI errors.</strong> Artificial intelligence systems may produce inaccurate or erroneous results. Accuracy depends on photo quality, lighting, angle, and other factors beyond the Controller's control.</li>
+        <li><strong>User's final decision.</strong> Any decision regarding treatments, fertilisers, plant protection products, agrochemicals, or other measures rests solely with the data subject, at their own risk. Before applying potent or hazardous substances, consultation with a qualified specialist is strongly recommended.</li>
+        <li><strong>Right to human intervention.</strong> Pursuant to Art. 22(3) GDPR, the data subject is entitled to obtain human intervention, express their point of view, and contest the result of automated processing by contacting the Controller (§ 2).</li>
+        <li><strong>Limitation of liability.</strong> To the maximum extent permitted by applicable law, the Controller is not liable for any direct, indirect, incidental, or consequential damages, including but not limited to: death or damage to plants, loss of harvest, lost profits, expenses on treatments, time, or any other costs arising from the use or inability to use the App, or from following its recommendations.</li>
+        <li><strong>Acceptance "as is".</strong> The App is provided "<em>as is</em>" and "<em>as available</em>", without express or implied warranties of accuracy, fitness for a particular purpose, error-free operation, or conformity with user expectations.</li>
+      </ol>
+    </article>
+
+    <article class="section" id="en-14">
+      <h2><span class="num">§ 14</span>Changes to this Policy<a class="anchor" href="#en-14" aria-label="Permanent link">#</a></h2>
+      <p>The Controller is entitled to amend this Policy due to changes in legislation, modifications to App functionality, or data processing practices. The current version is published on this page indicating the effective date and version number.</p>
+      <p>Material changes affecting the legal position of data subjects shall be communicated to users no less than 30 (thirty) days prior to their effective date through in-app notifications and/or other available means.</p>
+    </article>
+
+    <article class="section" id="en-15">
+      <h2><span class="num">§ 15</span>Governing Law and Dispute Resolution<a class="anchor" href="#en-15" aria-label="Permanent link">#</a></h2>
+      <p>This Policy is governed by the laws of the <strong>Republic of Tajikistan</strong>, without regard to conflict-of-laws rules. Mandatory rights of data subjects guaranteed by GDPR (for EU/EEA residents) and CCPA (for California residents) apply in full.</p>
+      <p>Disputes are resolved through good-faith negotiations. Failing agreement, disputes are resolved before the competent courts of the Republic of Tajikistan, except where applicable consumer-protection law grants the data subject the right to bring action before the courts of their place of residence.</p>
+      <p>EU/EEA residents may lodge complaints with the supervisory authority of their place of residence, work, or alleged infringement. California residents — with the Office of the Attorney General of California.</p>
+    </article>
+
+    <article class="section" id="en-16">
+      <h2><span class="num">§ 16</span>Contact Information<a class="anchor" href="#en-16" aria-label="Permanent link">#</a></h2>
+      <div class="contact-card">
+        <div class="label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Data Controller
+        </div>
+        <h3>Nosirjon Soliev</h3>
+        <div class="row">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:nosirsnm77@gmail.com">nosirsnm77@gmail.com</a>
+        </div>
+        <div class="who">Republic of Tajikistan · All personal data requests are processed within statutory time limits.</div>
+      </div>
+    </article>
   </section>
 
   <footer>
-    Plant Doctor © 2026 Nosirjon Sattorov · All Rights Reserved
+    Plant Doctor · © 2026 Nosirjon Soliev · All Rights Reserved
+    <div class="links">
+      <a href="https://nosirsnm77-coder.github.io/plant-doctor-stats/">Live Stats</a>
+      <a href="javascript:window.print()" id="printLink">Print</a>
+    </div>
   </footer>
 </div>
 
 <script>
-  document.querySelectorAll('.lang-switch button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang;
-      document.querySelectorAll('.lang-switch button').forEach(b => b.classList.toggle('active', b === btn));
-      document.querySelectorAll('section.lang').forEach(s => s.classList.toggle('active', s.id === lang));
-      document.documentElement.lang = lang === 'tj' ? 'tg' : lang;
-      window.scrollTo({top: 0, behavior: 'smooth'});
+  const STORAGE_LANG = 'pd_privacy_lang';
+  const STORAGE_THEME = 'pd_privacy_theme';
+
+  const I18N = {
+    ru: {
+      eyebrow: 'Privacy Policy · GDPR · CCPA',
+      docTitle: 'Политика конфиденциальности',
+      docSubtitle: 'Plant Doctor — мобильное приложение для AI-диагностики растений. Документ соответствует GDPR (ЕС), CCPA (Калифорния), COPPA (США) и Закону РТ № 1537 от 03.08.2018 «О защите персональных данных».',
+      metaEffective: 'Дата вступления в силу',
+      effectiveDate: '5 мая 2026 г.',
+      metaVersion: 'Версия',
+      metaApp: 'Идентификатор приложения',
+      metaController: 'Оператор данных',
+      controllerName: 'Солиев Носирджон',
+      tocTitle: 'Оглавление',
+      print: 'Печать',
+      tocItems: ['Определения и сфера применения','Оператор данных и контактное лицо','Категории обрабатываемых данных','Цели и правовые основания обработки','Права субъектов данных','Получатели данных и субобработчики','Трансграничная передача данных','Сроки хранения и удаление данных','Меры безопасности','Cookies и локальное хранилище','Защита персональных данных детей','Уведомление о нарушении безопасности','Автоматизированное принятие решений и AI','Изменения в Политике','Применимое право и разрешение споров','Контактная информация'],
+    },
+    tj: {
+      eyebrow: 'Сиёсати махфият · GDPR · CCPA',
+      docTitle: 'Сиёсати махфият',
+      docSubtitle: 'Plant Doctor — барномаи мобилӣ барои ташхиси AI-и растаниҳо. Ҳуҷҷат ба GDPR (ИА), CCPA (Калифорния), COPPA (ИМА) ва Қонуни ҶТ № 1537 аз 03.08.2018 «Дар бораи ҳифзи маълумоти шахсӣ» мутобиқ аст.',
+      metaEffective: 'Санаи эътибор',
+      effectiveDate: '5 майи соли 2026',
+      metaVersion: 'Версия',
+      metaApp: 'Идентификатори барнома',
+      metaController: 'Оператори маълумот',
+      controllerName: 'Солиев Носирҷон',
+      tocTitle: 'Феҳраст',
+      print: 'Чоп',
+      tocItems: ['Таърифҳо ва соҳаи татбиқ','Оператори маълумот ва шахси алоқа','Категорияҳои маълумоти коркардшаванда','Ҳадафҳо ва асосҳои ҳуқуқии коркард','Ҳуқуқҳои субъектҳои маълумот','Гирандагони маълумот ва зеркоркардгарон','Интиқоли фаромарзии маълумот','Муҳлатҳои нигоҳдорӣ ва нест кардани маълумот','Чораҳои амният','Cookies ва анбори маҳаллӣ','Ҳифзи маълумоти шахсии кӯдакон','Огоҳномаи вайроншавии амният','Қарорҳои худкор ва AI','Тағйирот дар Сиёсат','Қонунгузории татбиқшаванда ва ҳалли баҳсҳо','Маълумоти алоқа'],
+    },
+    en: {
+      eyebrow: 'Privacy Policy · GDPR · CCPA',
+      docTitle: 'Privacy Policy',
+      docSubtitle: 'Plant Doctor — a mobile application for AI-based plant diagnosis. This document complies with GDPR (EU), CCPA (California), COPPA (USA), and the Law of the Republic of Tajikistan No. 1537 of 03.08.2018 "On Personal Data Protection".',
+      metaEffective: 'Effective date',
+      effectiveDate: 'May 5, 2026',
+      metaVersion: 'Version',
+      metaApp: 'App identifier',
+      metaController: 'Data Controller',
+      controllerName: 'Nosirjon Soliev',
+      tocTitle: 'Table of Contents',
+      print: 'Print',
+      tocItems: ['Definitions and Scope','Data Controller and Contact','Categories of Data Processed','Purposes and Legal Bases of Processing','Rights of Data Subjects','Recipients and Sub-processors','International Data Transfers','Retention Periods and Erasure','Security Measures','Cookies and Local Storage',"Children's Privacy",'Data Breach Notification','Automated Decision-Making and AI','Changes to this Policy','Governing Law and Dispute Resolution','Contact Information'],
+    },
+  };
+
+  let currentLang = localStorage.getItem(STORAGE_LANG) || 'ru';
+  if (!I18N[currentLang]) currentLang = 'ru';
+
+  function buildToc() {
+    const ol = document.getElementById('tocList');
+    const items = I18N[currentLang].tocItems;
+    ol.innerHTML = '';
+    items.forEach((title, idx) => {
+      const num = idx + 1;
+      const id = `${currentLang}-${num}`;
+      const li = document.createElement('li');
+      li.innerHTML = `<a href="#${id}">${title}</a>`;
+      ol.appendChild(li);
+    });
+  }
+
+  function applyI18n() {
+    const dict = I18N[currentLang];
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const k = el.getAttribute('data-i18n');
+      if (dict[k]) el.textContent = dict[k];
+    });
+    document.documentElement.lang = currentLang === 'tj' ? 'tg' : currentLang;
+    document.querySelectorAll('.lang-btn').forEach((b) => b.classList.toggle('active', b.dataset.lang === currentLang));
+    document.querySelectorAll('section.lang').forEach((s) => s.classList.toggle('active', s.id === currentLang));
+    buildToc();
+  }
+
+  document.querySelectorAll('.lang-btn').forEach((b) => {
+    b.addEventListener('click', () => {
+      currentLang = b.dataset.lang;
+      localStorage.setItem(STORAGE_LANG, currentLang);
+      applyI18n();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
-</script>
 
+  // Theme toggle
+  const savedTheme = localStorage.getItem(STORAGE_THEME);
+  if (savedTheme === 'light' || savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  }
+  document.getElementById('themeBtn').addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme');
+    const isDark = current === 'dark' || (!current && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    const next = isDark ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem(STORAGE_THEME, next);
+  });
+
+  applyI18n();
+</script>
 </body>
 </html>
